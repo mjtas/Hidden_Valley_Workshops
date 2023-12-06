@@ -1,0 +1,39 @@
+/* Define custom fonts using @font-face */
+@font-face {
+    font-family: 'freeserifregular';
+    src: url('fonts/freeserif-webfont.woff2') format('woff2'),
+         url('fonts/freeserif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'playfair_display_scbold';
+  src: url('fonts/playfairdisplaysc-bold-webfont.woff2') format('woff2'),
+       url('fonts/playfairdisplaysc-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset default styles for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Styling for the entire page */
+body {
+  font-family: 'freeserifregular', 'Georgia', serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('creekPaddock.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+

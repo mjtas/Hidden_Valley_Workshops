@@ -1,0 +1,533 @@
+/* Importing base styles from another CSS file */
+@import './base.css';
+
+/* Styling for the root application container */
+#app {
+  margin: 0 auto; /* Centre the content horizontally */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the main content section */
+.main {
+  display: flex;
+  justify-content: center; /* Centre content horizontally */
+  align-items: center; /* Centre content vertically */
+  flex-grow: 1; /* Allow content to grow to fill available space */
+}
+
+/* Styling for the main content container */
+.main-container {
+  max-width: 960px; /* Maximum width for the content container */
+  width: 100%; /* Allow container to take full width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  flex-grow: 1; /* Allow container to grow to fill available space */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Center content horizontally */
+  background-color: #186A3B; /* Background color for main container */
+  background-color: rgba(255,255,255,0.25); /* Background color with transparency */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+}
+
+/* Styling for the main heading section */
+.main-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  gap: 16px; /* Gap between heading elements */
+  margin-top: 48px; /* Top margin for the heading section */
+  margin-bottom: 24px; /* Bottom margin for the heading section */
+}
+
+/* Styling for other heading section */
+.other-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center;
+  gap: 16px; /* Gap between heading elements */
+  margin-top: 48px; /* Top margin for the heading section */
+}
+
+/* Styling for the other main content sections */
+.main-other {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly */
+  gap: 72px; /* Gap between content sections */
+}
+
+/* Styling for the other gift content sections */
+.gift-other {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 72px; /* Gap between content sections */
+}
+
+
+/* Styling for the other main content sections */
+.about-other {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+  gap: 72px; /* Gap between content sections */
+}
+
+/* Styling for the sides of main content */
+.main-left, .main-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Centre content vertically */
+  gap: 24px;
+}
+
+/* Styling for the workshop table container*/
+.table-left {
+  width: 80%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Centre content vertically */
+}
+
+/* Styling for main text content */
+.main-text {
+  list-style-type: none; /* Remove list style from main text */
+  margin: 0;
+  margin-top: 34px;
+  padding: 12px;
+  font-size: 22px;
+  text-align: justify; /* Justify text alignment */
+  background-color: white; /* Background color for text content */
+  background-color: rgba(255,255,255,0.5); /* Background color with transparency */
+  color: black;
+}
+
+.picnic-text {
+  width: 70%;
+  list-style-type: none; /* Remove list style */
+  margin: 0;
+  margin-top: 34px;
+  padding: 12px;
+  font-size: 22px;
+  text-align: justify; /* Justify text alignment */
+  background-color: white; /* Background color for text content */
+  background-color: rgba(255,255,255,0.5); /* Background color with transparency */
+  color: black;
+}
+
+.picnic-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-opaque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 34px;
+  padding: 12px;
+  gap: 30px;
+  font-size: 18px;
+  background-color: white; /* Background color for text content */
+  background-color: rgba(255,255,255,0.5); /* Background color with transparency */
+  color: black;
+}
+
+.block {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+  /* Styles for the workshop timetable */
+  th, td {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: #0E6251;
+    color: white;
+  }
+  
+  .workshop-a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .workshop-a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  table {
+    width: 100%;
+  }
+
+
+/*Styling for about image */
+.about-img {
+  max-width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for main list items */
+.main-li {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+/* Styling for price items */
+.price-li {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  text-align: center;
+}
+
+/* Styling for different heading levels */
+h1 {
+  font-family: 'playfair_display_scbold', 'Georgia', serif; 
+  font-size: 48px;
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.black-h2 {
+  font-size: 48px;
+  color: black;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.h3-link {
+  color: black;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.h3-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styling for workshop content section */
+.content {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Centre content horizontally */
+}
+
+/* Styling for buttons */
+.button {
+  color: #F9FAF8;
+  background: #0E6251;
+  /* Rounded corner for buttons */
+  border-radius: 8px;
+  font-family: 'freeserifregular', 'Georgia', serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+button:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+}
+
+/* Styling for button with class button1 */
+.button1 {
+  border: none;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Styling for button with class button4 */
+.button4 {
+  border: none;
+  width: 200px;
+  cursor: pointer;
+  padding: 24px;
+}
+
+  /* Styling for booking section */
+  .booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.voucher-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking {
+  /* Rounded corner for booking section */
+  border-radius: 8px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0E6251;
+  padding: 32px;
+}
+
+.green-subscription {
+  border-radius: 8px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #0E6251;
+  padding: 32px;
+}
+
+
+  .home-booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.workshop-booking-container {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.home-booking {
+  /* Rounded corner for booking section */
+  border-radius: 8px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0E6251;
+  padding: 18px;
+}
+
+
+.booking-text {
+  color: #F9FAF8;
+  margin-left: 2px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button2 {
+  margin-left: 24px;
+  margin-right: 12px;
+  width: 200px;
+  border: 2px solid #F9FAF8;
+  cursor: pointer;
+}
+
+.button3 {
+  margin-left: 24px;
+  margin-right: 12px;
+  border: 2px solid #F9FAF8;
+  padding: 10px 24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Style for the search input */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E6251; /* Background color to match the main container */
+  background-color: rgba(255, 255, 255, 0.25); /* Background color with transparency */
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.search-input {
+  width: 240px;
+  padding: 8px;
+  margin: 0;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.clear-button {
+  background-color: #0E6251; /* Background color for the button */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Round button corners */
+  padding: 5px 10px; /* Padding for button content */
+  margin-left: 5px; /* Add some space between input and button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: flex; /* Align the button vertically with the input */
+  align-items: center; /* Center button content vertically */
+  font-size: 14px; /* Font size */
+}
+
+.clear-button:hover {
+  background-color: #0a301b; /* Darker green on hover */
+}
+
+/* Styling for the blog heading section */
+.blog-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  margin-bottom: 24px; /* Bottom margin for the heading section */
+}
+
+/* Additional styles for highlighting */
+.highlight {
+  background-color: #186A3B;
+  color: white;
+  font-weight: bold;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+button,
+input
+{
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.interest-form {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wide-input {
+  width: 180px;
+  padding: 8px;
+  margin: 0;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.message-input {
+  width: 100%;
+  padding: 72px;
+  margin: 0;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+.map {
+  height: 40vh;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Media query for screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+  .main-other, .block {
+    flex-direction: column; /* Stack content vertically */
+    gap: 24px; /* Adjust spacing between sections */
+  }
+
+  .main-left,
+  .main-right, .table-left {
+    width: 100%; /* Take up full width on smaller screens */
+  }
+
+  .main-heading {
+    margin-top: 24px; /* Reduce top margin for smaller screens */
+  }
+
+  .picnic-text {
+    width: 100%;
+  }
+
+  h1, h2 {
+    font-size: 36px;
+  }
+
+  .booking {
+    padding: 16px;
+}
+
+ .home-booking {
+  flex-direction: column;
+}
+
+/* Media query for screens between 768px and 1023px (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-other {
+    gap: 48px; /* Adjust spacing between sections */
+  }
+}
+}
