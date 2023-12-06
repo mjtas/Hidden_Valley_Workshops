@@ -20,5 +20,16 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  define: {
+    // Access Netlify environment variables
+    'import.meta.env.VITE_MAP': JSON.stringify(import.meta.env.VITE_MAP),
+    // Add other environment variables as needed
+  },
+  build: {
+    rollupOptions: {
+      // https://rollupjs.org/configuration-options/
+      external: ['axios'],
+    }
   }
 })
