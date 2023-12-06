@@ -2,6 +2,11 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import dotenv from 'dotenv';
+
+//Load environment variables from .env file
+dotenv.config();
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,17 +24,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  },
-  define: {
-    // Access Netlify environment variables
-    'import.meta.env.VITE_MAP': JSON.stringify(import.meta.env.VITE_MAP),
-    // Add other environment variables as needed
-  },
-  build: {
-    rollupOptions: {
-      // https://rollupjs.org/configuration-options/
-      external: ['axios'],
     }
   }
 })

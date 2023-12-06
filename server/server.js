@@ -1,9 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3000; // Use the provided port or default to 3000
+const port = 3000;
+
+app.use(cors({
+  origin: 'http://localhost:5176',
+}));
 
 const uri = process.env.MONGODB_URI;
 
