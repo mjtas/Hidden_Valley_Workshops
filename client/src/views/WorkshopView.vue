@@ -50,7 +50,7 @@ export default {
     },
     created() {
         // Make HTTP GET requests to backend API
-        axios.get('/getData')
+        axios.get('/server/getData')
         .then(response => {
             this.workshops = response.data; // Update workshops property with fetched data
             this.sortWorkshops(); // Sort the workshops
@@ -60,7 +60,7 @@ export default {
         .catch(error => {
             console.error('Error fetching data:', error);
         });
-        axios.get('/getPriceData')
+        axios.get('/server/getPriceData')
         .then(response => {
             this.price = response.data; // Update type property with fetched data
         })

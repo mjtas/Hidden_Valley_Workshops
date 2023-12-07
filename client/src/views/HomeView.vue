@@ -57,7 +57,7 @@ export default {
   },
   created() {
     // Make HTTP GET request to backend API
-    axios.get('/getData')
+    axios.get('/server/getData')
       .then(response => {
         this.workshops = response.data; // Update workshops property with fetched data
         this.sortWorkshops(); // Sort the workshops
