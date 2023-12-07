@@ -59,7 +59,7 @@ export default {
   },
     created() {
     // Make HTTP GET request to backend API
-    axios.get('http://localhost:3000/getPriceData')
+    axios.get('/getPriceData')
       .then(response => {
         this.price = response.data; // Update type property with fetched data
       })
