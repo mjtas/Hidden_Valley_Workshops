@@ -16,7 +16,7 @@ const distPath = path.join(path.resolve(), "../client/dist"); // production asse
 
 dotenv.config();
 
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(cors()); // to allow cross origin requests
 app.use(bodyParser.json()); // to convert the request into JSON
