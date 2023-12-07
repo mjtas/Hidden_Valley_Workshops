@@ -57,7 +57,7 @@ export default {
   },
   created() {
     // Make HTTP GET request to backend API
-    api.get('${process.env.VITE_BASE_URL}/getData')
+    axios.get('${process.env.VITE_BASE_URL}/getData')
       .then(response => {
         this.workshops = response.data; // Update workshops property with fetched data
         this.sortWorkshops(); // Sort the workshops

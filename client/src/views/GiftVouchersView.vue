@@ -65,13 +65,8 @@ export default {
     };
   },
   created() {
-    // Set the base URL for Axios
-    const api = axios.create({
-    baseURL: import.meta.env.VITE_BASE_URL,
-    });
-    
     // Make HTTP GET request to backend API
-    api.get('${process.env.VITE_BASE_URL}/getData')
+    axios.get('${process.env.VITE_BASE_URL}/getData')
       .then(response => {
         this.workshops = response.data; // Update workshops property with fetched data
         this.sortWorkshops(); // Sort the workshops
