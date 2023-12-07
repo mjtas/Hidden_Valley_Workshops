@@ -1,7 +1,4 @@
 {
-  "_axios-28bc18a3.js": {
-    "file": "assets/axios-28bc18a3.js"
-  },
   "src/assets/about.png": {
     "file": "assets/about-d5cbed8c.png",
     "src": "src/assets/about.png"
@@ -86,7 +83,7 @@
       "src/views/BlogView.vue",
       "src/views/ContactUsView.vue"
     ],
-    "file": "assets/main-c0e4a1f2.js",
+    "file": "assets/main-52a0e6e1.js",
     "isEntry": true,
     "src": "src/main.js"
   },
@@ -95,7 +92,7 @@
       "assets/about-d5cbed8c.png",
       "assets/hiddenValley-1ce48f2d.png"
     ],
-    "file": "assets/AboutView-392a3e65.js",
+    "file": "assets/AboutView-2341092e.js",
     "imports": [
       "src/main.js"
     ],
@@ -107,7 +104,7 @@
       "assets/blog2-abf9c86b.png",
       "assets/blog-56245f1c.png"
     ],
-    "file": "assets/BlogView-c3fe44dd.js",
+    "file": "assets/BlogView-c8a4525a.js",
     "imports": [
       "src/main.js"
     ],
@@ -115,7 +112,7 @@
     "src": "src/views/BlogView.vue"
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-54cfeffe.js",
+    "file": "assets/ContactUsView-7cb43c30.js",
     "imports": [
       "src/main.js"
     ],
@@ -130,9 +127,8 @@
     "css": [
       "assets/GiftVouchersView-f6eacad0.css"
     ],
-    "file": "assets/GiftVouchersView-1a24be63.js",
+    "file": "assets/GiftVouchersView-5f062db9.js",
     "imports": [
-      "_axios-28bc18a3.js",
       "src/main.js"
     ],
     "isDynamicEntry": true,
@@ -146,7 +142,7 @@
       "assets/hill-3ddb4907.png",
       "assets/firepit-d3f0e6a5.png"
     ],
-    "file": "assets/PicnicHampersView-1d1c9710.js",
+    "file": "assets/PicnicHampersView-5893dc7d.js",
     "imports": [
       "src/main.js"
     ],
@@ -154,9 +150,8 @@
     "src": "src/views/PicnicHampersView.vue"
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-1a7105a9.js",
+    "file": "assets/WorkshopView-125394b8.js",
     "imports": [
-      "_axios-28bc18a3.js",
       "src/main.js"
     ],
     "isDynamicEntry": true,
