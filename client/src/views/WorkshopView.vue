@@ -49,13 +49,8 @@ export default {
         };
     },
     created() {
-        // Set the base URL for Axios
-        const api = axios.create({
-        baseURL: import.meta.env.VITE_BASE_URL,
-        });
-        
         // Make HTTP GET requests to backend API
-        api.get('/getData')
+        axios.get('${process.env.VITE_BASE_URL}/getData')
         .then(response => {
             this.workshops = response.data; // Update workshops property with fetched data
             this.sortWorkshops(); // Sort the workshops
@@ -65,7 +60,7 @@ export default {
         .catch(error => {
             console.error('Error fetching data:', error);
         });
-        api.get('/getPriceData')
+        axios.get('${process.env.VITE_BASE_URL}/getPriceData')
         .then(response => {
             this.price = response.data; // Update type property with fetched data
         })

@@ -9,7 +9,6 @@ const homeRouter = express.Router();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const environment = process.env.NODE_ENV;
-console.log('Environment:', environment);
 
 const parseManifest = async () => {
   if (environment !== "production") return {};

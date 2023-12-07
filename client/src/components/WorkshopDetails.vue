@@ -58,12 +58,8 @@ export default {
     };
     },
     created() {
-        // Set the base URL for Axios
-        const api = axios.create({
-        baseURL: import.meta.env.VITE_BASE_URL,
-        });
         // Make HTTP GET request to backend API
-        api.get('/getPriceData')
+        api.get('${process.env.VITE_BASE_URL}/getPriceData')
         .then(response => {
             this.price = response.data; // Update type property with fetched data
         })

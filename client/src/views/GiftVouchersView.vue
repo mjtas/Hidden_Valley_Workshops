@@ -71,7 +71,7 @@ export default {
     });
     
     // Make HTTP GET request to backend API
-    api.get('/getData')
+    api.get('${process.env.VITE_BASE_URL}/getData')
       .then(response => {
         this.workshops = response.data; // Update workshops property with fetched data
         this.sortWorkshops(); // Sort the workshops
@@ -81,7 +81,7 @@ export default {
       .catch(error => {
         console.error('Error fetching data:', error);
       });
-      api.get('/getPriceData')
+      api.get('${process.env.VITE_BASE_URL}/getPriceData')
       .then(response => {
         this.price = response.data; // Update type property with fetched data
       })

@@ -1,6 +1,5 @@
 import express from "express";
 import mongoose from "mongoose";
-import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import path from "path";
@@ -18,7 +17,6 @@ dotenv.config();
 
 const port = process.env.PORT;
 
-app.use(cors()); // to allow cross origin requests
 app.use(bodyParser.json()); // to convert the request into JSON
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -64,5 +62,5 @@ if (process.env.NODE_ENV === "production") {
 app.use(homeRouter);
 app.use(helmet);
 app.listen(port, () => {
-  console.log(`CORS-enabled web server listening on port ${port}`);
+  console.log(`Web server listening on port ${port}`);
 });
