@@ -76,7 +76,7 @@ export default {
       .catch(error => {
         console.error('Error fetching data:', error);
       });
-      api.get('${process.env.VITE_BASE_URL}/getPriceData')
+    axios.get('${process.env.VITE_BASE_URL}/getPriceData')
       .then(response => {
         this.price = response.data; // Update type property with fetched data
       })
