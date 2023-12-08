@@ -15,7 +15,7 @@
           <PremiumWorkshops :premiumWorkshops="premiumWorkshops" :standardWorkshops="standardWorkshops" @workshopSelected="handleWorkshopSelected" />
         </div>
         <div class="main-right">
-          <ul class="main-text">
+          <ul class="main-text" v-if="!showGiftUpComponent">
             <li class="main-li">Give an experience as a gift and buy a gift voucher to either our premium workshops (maximum 5 to 6 participants) or our standard workshops (maximum 10 to 12 participants).<br><br></li>
             <h3>Premium Voucher</h3>
             <div class="booking-container">
@@ -36,13 +36,13 @@
                 </div>
               </div>
           </ul>
+          <ul class="main-text" v-if="showGiftUpComponent">
+            <GiftUp />
+          </ul>
         </div>
       </div>
       <div class="about-other" v-if="selectedWorkshopName && selectedWorkshopName!==''">
         <WorkshopDetails :selectedWorkshop="selectedWorkshop" :workshops="sortedWorkshops"/>
-      </div>
-      <div class="about-other" v-if="showGiftUpComponent">
-        <GiftUp />
       </div>
     </div>
   </div>
