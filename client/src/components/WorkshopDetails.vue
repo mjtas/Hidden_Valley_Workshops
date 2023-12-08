@@ -59,7 +59,7 @@ export default {
     },
     created() {
         // Make HTTP GET request to backend API
-        axios.get('${process.env.VITE_BASE_URL}/getPriceData')
+        axios.get('https://hidden-valley-workshops.onrender.com/getPriceData')
         .then(response => {
             this.price = response.data; // Update type property with fetched data
         })

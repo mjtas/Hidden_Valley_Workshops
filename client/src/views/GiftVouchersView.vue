@@ -66,7 +66,7 @@ export default {
   },
   created() {
     // Make HTTP GET request to backend API
-    axios.get('${process.env.VITE_BASE_URL}/getData')
+    axios.get('https://hidden-valley-workshops.onrender.com/getData')
       .then(response => {
         this.workshops = response.data; // Update workshops property with fetched data
         this.sortWorkshops(); // Sort the workshops
@@ -76,7 +76,7 @@ export default {
       .catch(error => {
         console.error('Error fetching data:', error);
       });
-    axios.get('${process.env.VITE_BASE_URL}/getPriceData')
+    axios.get('https://hidden-valley-workshops.onrender.com/getPriceData')
       .then(response => {
         this.price = response.data; // Update type property with fetched data
       })
