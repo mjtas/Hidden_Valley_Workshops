@@ -113,41 +113,41 @@ export default {
       this.showGiftUpComponent = true;
     },
     calcPrice(premium) {
-            const workshopType = premium
-            ? this.price.find(price => price.type === "premium")
-            : this.price.find(price => price.type === "standard");
+      const workshopType = premium
+      ? this.price.find(price => price.type === "premium")
+      : this.price.find(price => price.type === "standard");
 
-            // Check if workshopType is defined before accessing properties
-            if (workshopType && workshopType.singlePrice !== undefined) {
-                return workshopType.singlePrice;
-            } else {
-                // Handle the case where workshopType or singlePrice is undefined
-                return "N/A";
-            }
-        },
-        calcDoublePrice(premium) {
-            const workshopType = premium
-            ? this.price.find(price => price.type === "premium")
-            : this.price.find(price => price.type === "standard");
+      // Check if workshopType is defined before accessing properties
+      if (workshopType && workshopType.singlePrice !== undefined) {
+        return workshopType.singlePrice;
+      } else {
+        // Handle the case where workshopType or singlePrice is undefined
+        return "N/A";
+      }
+    },
+    calcDoublePrice(premium) {
+      const workshopType = premium
+      ? this.price.find(price => price.type === "premium")
+      : this.price.find(price => price.type === "standard");
 
-            // Check if workshopType is defined before accessing properties
-            if (workshopType && workshopType.doublePrice !== undefined) {
-                return workshopType.doublePrice;
-            } else {
-                // Handle the case where workshopType or singlePrice is undefined
-                return "N/A";
-            }
-        },
+      // Check if workshopType is defined before accessing properties
+      if (workshopType && workshopType.doublePrice !== undefined) {
+        return workshopType.doublePrice;
+      } else {
+      // Handle the case where workshopType or singlePrice is undefined
+        return "N/A";
+      }
+    },
 
-        printPremium() {
-                premiumPrice = price.find(price => price.type === "premium");
-                return premiumPrice.singlePrice;
-            },
+    printPremium() {
+      premiumPrice = price.find(price => price.type === "premium");
+      return premiumPrice.singlePrice;
+    },
 
-            printDoublePremium() {
-                premiumPrice = price.find(price => price.type === "premium");
-                return premiumPrice.doublePrice;
-            }
+    printDoublePremium() {
+      premiumPrice = price.find(price => price.type === "premium");
+      return premiumPrice.doublePrice;
+    }
   }
 }
 </script>
