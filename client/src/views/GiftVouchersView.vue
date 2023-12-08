@@ -23,7 +23,7 @@
                   <div class="booking-left">
                     <div class="booking-text">$129 (or bring a friend for $199)</div>
                   </div>
-                  <button class="button button2" @click="redirectToExternalLink">Buy Now</button>
+                  <button class="button button2" @click="loadGiftUpComponent">Buy Now</button>
                 </div>
               </div>
               <h3>Standard Voucher</h3>
@@ -32,7 +32,7 @@
                   <div class="booking-left">
                     <div class="booking-text">$89 (or bring a friend for $135)</div>
                   </div>
-                  <button class="button button2" @click="redirectToExternalLink">Buy Now</button>
+                  <button class="button button2" @click="loadGiftUpComponent">Buy Now</button>
                 </div>
               </div>
           </ul>
@@ -40,6 +40,9 @@
       </div>
       <div class="about-other" v-if="selectedWorkshopName && selectedWorkshopName!==''">
         <WorkshopDetails :selectedWorkshop="selectedWorkshop" :workshops="sortedWorkshops"/>
+      </div>
+      <div class="about-other" v-if="showGiftUpComponent">
+        <GiftUp />
       </div>
     </div>
   </div>
@@ -49,11 +52,13 @@
 import axios from 'axios';
 import PremiumWorkshops from '../components/PremiumWorkshops.vue';
 import WorkshopDetails from '../components/WorkshopDetails.vue';
+import GiftUp from '../components/GiftUp.vue';
 
 export default {
   components: {
     PremiumWorkshops,
     WorkshopDetails,
+    GiftUp,
   },
   data() {
     return {
@@ -62,6 +67,7 @@ export default {
       selectedWorkshopName: '', // Set initial value to an empty string
       sortedWorkshops: [], // Store sorted workshops here
       price: [], // Store fetched data here
+      showGiftUpComponent: false,
     };
   },
   created() {
@@ -102,8 +108,9 @@ export default {
       // Sort workshops by date in ascending order
       this.sortedWorkshops = [...this.workshops].sort((a, b) => new Date(a.date) - new Date(b.date));
     },
-    redirectToExternalLink() {
-        window.location.href = 'https://www.eventbrite.com.au/d/australia--tasmania/events/';
+    loadGiftUpComponent() {
+      // Instead of redirecting, set the flag to show the GiftUp component
+      this.showGiftUpComponent = true;
     },
     calcPrice(premium) {
             const workshopType = premium
