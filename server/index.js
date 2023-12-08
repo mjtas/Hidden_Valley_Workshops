@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
+import cors from "cors";
 import path from "path";
 import Workshop from "./workshopModel.js";
 import Price from "./priceModel.js";
@@ -12,6 +13,13 @@ import helmet from "helmet";
 const app = express();
 const publicPath = path.join(path.resolve(), "../client/public");
 const distPath = path.join(path.resolve(), "../client/dist"); // production assets file path
+
+app.use(cors({
+  origin: [
+    'https://www.hiddenvalleyworkshops.com.au',
+    'https://www.hiddenvalleysustainablelivingworkshops.com.au'
+  ],
+}));
 
 dotenv.config();
 

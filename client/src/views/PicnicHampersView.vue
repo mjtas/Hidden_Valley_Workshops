@@ -14,7 +14,7 @@
             <div class="picnic-container">
               <ul class="picnic-text">
                 <li class="main-li">With all workshops finishing at 1pm, pre-ordering a picnic hamper allows you to spend more time at Hidden Valley.  
-                Discuss what you have learned over lunch at one of our fantastic picnic sites.</li>
+                Discuss what you have learned over lunch at one of our fantastic picnic sites</li>
                 </ul>
                 </div>
                 </div>
@@ -22,11 +22,11 @@
             <div class="main-left">
               <ul class="main-text">
                 <h3>Each locally sourced ploughman's lunch basket includes:</h3>
-                <li class="main-li">- A bottle of sparkling apple juice.</li>
+                <li class="main-li">- A bottle of sparkling apple juice</li>
                 <li class="main-li">- A soft and hard cheese</li>
                 <li class="main-li">- Wafers(GF) and fresh sourdough</li>
                 <li class="main-li">- Quince paste</li>
-                <li class="main-li">- Olives and marinated artichokes.</li>
+                <li class="main-li">- Olives and marinated artichokes</li>
               </ul>
             </div>
           <div class="main-right">
