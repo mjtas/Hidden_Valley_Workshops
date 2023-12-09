@@ -6,6 +6,7 @@ import cors from "cors";
 import path from "path";
 import Workshop from "./workshopModel.js";
 import Price from "./priceModel.js";
+import Subscriber from "./subscriberModel.js";
 import assetsRouter from "./assetsRouter.js";
 import homeRouter from "./homeRouter.js";
 import helmet from "helmet";
@@ -57,6 +58,22 @@ app.get('/getPriceData', async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).send('Error fetching price data');
+  }
+});
+
+// Route to handle subscription form submission
+app.post('/subscribe', async (req, res) => {
+  try {
+    const { name, email } = req.body;
+
+    // Save subscriber details to MongoDB
+    const subscriber = new Subscriber({ name, email });
+    await subscriber.save();
+
+    res.status(200).json({ message: 'Subscription successful!' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
   }
 });
 

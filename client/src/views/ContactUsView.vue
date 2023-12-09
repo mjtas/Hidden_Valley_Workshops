@@ -71,7 +71,6 @@ export default {
           email: this.email,
           message: this.message
         });
-        console.log('Emails Received: ', this.emailsReceived);
       } else {
         // Form for subscription is submitted
         // Add data to subscribers array
@@ -79,7 +78,6 @@ export default {
           name: this.name,
           email: this.email,
         });
-        console.log('Subscribers:', this.subscribers);
       }
 
       // Clear form fields and checkboxes

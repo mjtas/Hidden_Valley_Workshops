@@ -60,7 +60,7 @@
     "src": "src/assets/views.png"
   },
   "src/main.css": {
-    "file": "assets/main-079b0fc3.css",
+    "file": "assets/main-039fa9a4.css",
     "src": "src/main.css"
   },
   "src/main.js": {
@@ -73,7 +73,7 @@
       "assets/creekPaddock-8b57bdd4.png"
     ],
     "css": [
-      "assets/main-079b0fc3.css"
+      "assets/main-039fa9a4.css"
     ],
     "dynamicImports": [
       "src/views/AboutView.vue",
@@ -83,7 +83,7 @@
       "src/views/BlogView.vue",
       "src/views/ContactUsView.vue"
     ],
-    "file": "assets/main-b32426ba.js",
+    "file": "assets/main-84e9f824.js",
     "isEntry": true,
     "src": "src/main.js"
   },
@@ -92,7 +92,7 @@
       "assets/about-d5cbed8c.png",
       "assets/hiddenValley-1ce48f2d.png"
     ],
-    "file": "assets/AboutView-0362a1b8.js",
+    "file": "assets/AboutView-cf8a7511.js",
     "imports": [
       "src/main.js"
     ],
@@ -104,7 +104,7 @@
       "assets/blog2-abf9c86b.png",
       "assets/blog-56245f1c.png"
     ],
-    "file": "assets/BlogView-854f089a.js",
+    "file": "assets/BlogView-e552a37d.js",
     "imports": [
       "src/main.js"
     ],
@@ -112,22 +112,15 @@
     "src": "src/views/BlogView.vue"
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-f884cba5.js",
+    "file": "assets/ContactUsView-e28cb582.js",
     "imports": [
       "src/main.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/ContactUsView.vue"
   },
-  "src/views/GiftVouchersView.css": {
-    "file": "assets/GiftVouchersView-f6eacad0.css",
-    "src": "src/views/GiftVouchersView.css"
-  },
   "src/views/GiftVouchersView.vue": {
-    "css": [
-      "assets/GiftVouchersView-f6eacad0.css"
-    ],
-    "file": "assets/GiftVouchersView-22f9c138.js",
+    "file": "assets/GiftVouchersView-939f66ce.js",
     "imports": [
       "src/main.js"
     ],
@@ -142,7 +135,7 @@
       "assets/hill-3ddb4907.png",
       "assets/firepit-d3f0e6a5.png"
     ],
-    "file": "assets/PicnicHampersView-c9edfa3b.js",
+    "file": "assets/PicnicHampersView-4a175e09.js",
     "imports": [
       "src/main.js"
     ],
@@ -150,7 +143,7 @@
     "src": "src/views/PicnicHampersView.vue"
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-76c42211.js",
+    "file": "assets/WorkshopView-c0bb301d.js",
     "imports": [
       "src/main.js"
     ],

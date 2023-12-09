@@ -14,7 +14,35 @@
 </template>
 
 <script>
-    export default {
-
+import axios from 'axios';
+export default {
+  data() {
+    return {
+      name: '',
+      email: '',
+      isLoading: false,
+    };
+  },
+  methods: {
+    async submitForm() {
+      try {
+        this.isLoading = true;
+        // Send subscriber details to server
+        const response = await axios.post('https://hidden-valley-workshops.onrender.com/subscribe', {
+            name: this.name,
+            email: this.email,
+        });
+        alert(response.data.message); // Display the response message from the server
+          const router = this.$router;
+          router.push({ path: "/" });
+        
+      } catch (error) {
+        console.error('Subscription failed:', error);
+        alert("Subscription failed. Please try again later.");
+      } finally {
+        this.isLoading = false;
+      }
     }
+  }
+}
 </script>
