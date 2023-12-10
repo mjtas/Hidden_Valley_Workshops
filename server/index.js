@@ -88,8 +88,8 @@ app.post('/contact', async (req, res) => {
     await client.sendEmail({
       "From": "bonnie@hiddenvalleyworkshops.com.au",
       "To": "hiddenvalleyworkshops@duck.com",
-      "Subject": "Message from " + { name, email },
-      "TextBody": { message },
+      "Subject": "Message from " + name + " (" + email + ")",
+      "TextBody": message,
     });
 
     res.status(200).json({ message: 'Message sent!' });
