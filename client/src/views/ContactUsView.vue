@@ -71,7 +71,7 @@ export default {
       }
 
       // Send form data to the /contact API
-      axios.post('http://hidden-valley-workshops.onrender.com/contact', {
+      axios.post('https://hidden-valley-workshops.onrender.com/contact', {
         name: this.name,
         email: this.email,
         message: this.message,
