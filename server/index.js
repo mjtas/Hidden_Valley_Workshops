@@ -87,7 +87,7 @@ app.post('/contact', async (req, res) => {
     const client = new postmark.ServerClient(process.env.POSTMARK_API);
     await client.sendEmail({
       "From": "bonnie@hiddenvalleyworkshops.com.au",
-      "To": "hiddenvalleyworkshops@duck.com",
+      "To": "bonnie@hiddenvalleyworkshops.com.au",
       "Subject": "Message from " + name + " (" + email + ")",
       "TextBody": message,
     });
