@@ -52,7 +52,6 @@ export default {
       sortedWorkshops: [], // Store sorted workshops here
       selectedWorkshop: null, //Set initial value to null
       selectedWorkshopName: '', // Set initial value to an empty string
-      subscribers: [],
     };
   },
   created() {
@@ -78,20 +77,7 @@ export default {
     sortWorkshops() {
       // Sort workshops by date in ascending order
       this.sortedWorkshops = [...this.workshops].sort((a, b) => new Date(a.date) - new Date(b.date));
-    },
-    submitForm() {
-        // Form for subscription is submitted
-        // Add data to subscribers array
-        this.subscribers.push({
-          name: this.name,
-          email: this.email,
-        });
-        console.log('Subscribers:', this.subscribers);
-
-      // Clear form fields and checkboxes
-      this.name = '';
-      this.email = '';
-    },
+    }
   }
 }
 </script>

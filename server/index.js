@@ -10,6 +10,7 @@ import Subscriber from "./subscriberModel.js";
 import assetsRouter from "./assetsRouter.js";
 import homeRouter from "./homeRouter.js";
 import helmet from "helmet";
+import postmark from "postmark";
 
 const app = express();
 const publicPath = path.join(path.resolve(), "../client/public");
@@ -75,6 +76,27 @@ app.post('/subscribe', async (req, res) => {
     console.error(error);
     res.status(500).json({ message: 'Internal Server Error' });
   }
+});
+
+// Route to handle contact form
+app.post('/contact', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+
+    // Send email
+    const client = new postmark.ServerClient(process.env.POSTMARK_API);
+    await client.sendEmail({
+      "From": "bonnie@hiddenvalleyworkshops.com.au",
+      "To": "hiddenvalleyworkshops@duck.com",
+      "Subject": "Message from " + { name, email },
+      "TextBody": { message },
+    });
+
+    res.status(200).json({ message: 'Message sent!' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' })
+  };
 });
 
 // Assets path based on the environment running

@@ -104,19 +104,6 @@ export default {
     clearSearch() {
       this.searchQuery = "";
     },
-    submitForm() {
-        // Form for subscription is submitted
-        // Add data to subscribers array
-        this.subscribers.push({
-          name: this.name,
-          email: this.email,
-        });
-        console.log('Subscribers:', this.subscribers);
-
-      // Clear form fields and checkboxes
-      this.name = '';
-      this.email = '';
-    },
   },
-};
+}
 </script>

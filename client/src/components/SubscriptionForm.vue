@@ -35,6 +35,10 @@ export default {
         alert(response.data.message); // Display the response message from the server
           const router = this.$router;
           router.push({ path: "/" });
+
+         // Clear form fields and checkboxes
+        this.name = '';
+        this.email = '';
         
       } catch (error) {
         console.error('Subscription failed:', error);

@@ -44,7 +44,9 @@
 </template>
 
 <script>
+import axios from 'axios';
 import RefundComponent from  '../components/RefundComponent.vue';
+import { addListener } from 'process';
 export default {
   components: {
     RefundComponent,
@@ -54,7 +56,6 @@ export default {
       email: '',
       name: '',
       message: '',
-      emailsReceived: [],
     };
   },
   mounted() {
@@ -63,28 +64,32 @@ export default {
   },
   methods: {
     submitForm() {
-      if (this.message) {
-        // Form for questions about workshops is submitted
-        // Add data to emailsReceived array
-        this.emailsReceived.push({
-          name: this.name,
-          email: this.email,
-          message: this.message
-        });
-      } else {
-        // Form for subscription is submitted
-        // Add data to subscribers array
-        this.subscribers.push({
-          name: this.name,
-          email: this.email,
-        });
+      // Validate form fields (you may add more validation as needed)
+      if (!this.name || !this.email || !this.message) {
+        alert('Please fill in all fields.');
+        return;
       }
 
-      // Clear form fields and checkboxes
+      // Send form data to the /contact API
+      axios.post('http://hidden-valley-workshops.onrender.com/contact', {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      })
+        .then(response => {
+          alert(response.data.message);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert("Message failed to send");
+        });
+
+      // Clear form fields
       this.name = '';
       this.email = '';
       this.message = '';
     },
+
     loadGoogleMapsScript() {
       // Check if the Google Maps script is already loaded
       
