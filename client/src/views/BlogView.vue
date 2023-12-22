@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import BlogPost from '../components/BlogPost.vue';
 
 export default {
