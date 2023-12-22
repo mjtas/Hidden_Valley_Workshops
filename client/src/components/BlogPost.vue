@@ -21,7 +21,6 @@
   
   <script>
   import SubscriptionForm from '../components/SubscriptionForm.vue';
-  import axios from 'axios';
   
   export default {
     components: {
@@ -34,16 +33,6 @@
       return {
         searchQuery: "", // Store the search query
       };
-    },
-    created() {
-      // Make HTTP GET request to backend API
-      axios.get('https://hidden-valley-workshops.onrender.com/getBlogData')
-        .then(response => {
-          this.blogPosts = response.data; // Update type property with fetched data
-        })
-        .catch(error => {
-          console.error('Error fetching blog posts:', error);
-        });
     },
     computed: {
       // Compute the postTextWithHighlights based on the searchQuery
@@ -71,7 +60,7 @@
         if (!searchQuery) return text; // Return the original text if searchQuery is empty
   
         // Find all occurrences of the searchQuery
-        const regex = new RegExp(searchQuery, "gi");
+        const regex = new RegExp(`\\b${searchQuery}\\b`, "gi");
   
         // Replace the search term with a highlighted version
         return text.replace(regex, (match) => `<span class="highlight">${match}</span>`);
