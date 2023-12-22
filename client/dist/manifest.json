@@ -75,7 +75,7 @@
       "src/views/BlogView.vue",
       "src/views/ContactUsView.vue"
     ],
-    "file": "assets/main-11f258cb.js",
+    "file": "assets/main-38561f16.js",
     "isEntry": true,
     "src": "src/main.js"
   },
@@ -84,7 +84,7 @@
       "assets/about-d5cbed8c.png",
       "assets/hiddenValley-1ce48f2d.png"
     ],
-    "file": "assets/AboutView-65fa3647.js",
+    "file": "assets/AboutView-99d70b16.js",
     "imports": [
       "src/main.js"
     ],
@@ -92,7 +92,7 @@
     "src": "src/views/AboutView.vue"
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-c241c608.js",
+    "file": "assets/BlogView-516d7044.js",
     "imports": [
       "src/main.js"
     ],
@@ -100,7 +100,7 @@
     "src": "src/views/BlogView.vue"
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-5484a6ef.js",
+    "file": "assets/ContactUsView-5723f645.js",
     "imports": [
       "src/main.js"
     ],
@@ -108,7 +108,7 @@
     "src": "src/views/ContactUsView.vue"
   },
   "src/views/GiftVouchersView.vue": {
-    "file": "assets/GiftVouchersView-9c7d3c6e.js",
+    "file": "assets/GiftVouchersView-3c7ef855.js",
     "imports": [
       "src/main.js"
     ],
@@ -123,7 +123,7 @@
       "assets/hill-3ddb4907.png",
       "assets/firepit-d3f0e6a5.png"
     ],
-    "file": "assets/PicnicHampersView-869e1615.js",
+    "file": "assets/PicnicHampersView-5d53501a.js",
     "imports": [
       "src/main.js"
     ],
@@ -131,7 +131,7 @@
     "src": "src/views/PicnicHampersView.vue"
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-7ccd53b3.js",
+    "file": "assets/WorkshopView-2b529e49.js",
     "imports": [
       "src/main.js"
     ],

@@ -1,7 +1,7 @@
 <template>
     <div class="table-left">
         <ul class="main-text">
-            <h3 class="h3-link" @click="toggleText()">{{ post.title }}</h3>
+            <h3 class="h3-link" @click="toggleText(post)">{{ post.title }}</h3>
             <li class="main-li" v-if="post.show">
                 <span :class="{'highlight': isHighlighted(post.text)}" v-html="renderHtml(post.text)"></span>
             </li>
@@ -21,6 +21,7 @@
 
 <script>
 import SubscriptionForm from '../components/SubscriptionForm.vue';
+import axios from 'axios';
 
 export default {
   components: {
@@ -51,7 +52,7 @@ export default {
     },
   },
   methods: {
-    toggleText() {
+    toggleText(post) {
         // Toggle the 'show' property of the found workshop
         post.show = !post.show;
         }
