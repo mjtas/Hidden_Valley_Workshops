@@ -7,14 +7,6 @@
     "file": "assets/basket-885353da.png",
     "src": "src/assets/basket.png"
   },
-  "src/assets/blog.png": {
-    "file": "assets/blog-56245f1c.png",
-    "src": "src/assets/blog.png"
-  },
-  "src/assets/blog2.png": {
-    "file": "assets/blog2-abf9c86b.png",
-    "src": "src/assets/blog2.png"
-  },
   "src/assets/creek.png": {
     "file": "assets/creek-9b66ff69.png",
     "src": "src/assets/creek.png"
@@ -83,7 +75,7 @@
       "src/views/BlogView.vue",
       "src/views/ContactUsView.vue"
     ],
-    "file": "assets/main-07134efb.js",
+    "file": "assets/main-3d3f95d9.js",
     "isEntry": true,
     "src": "src/main.js"
   },
@@ -92,7 +84,7 @@
       "assets/about-d5cbed8c.png",
       "assets/hiddenValley-1ce48f2d.png"
     ],
-    "file": "assets/AboutView-d3c74bc4.js",
+    "file": "assets/AboutView-2893e7ad.js",
     "imports": [
       "src/main.js"
     ],
@@ -100,11 +92,7 @@
     "src": "src/views/AboutView.vue"
   },
   "src/views/BlogView.vue": {
-    "assets": [
-      "assets/blog2-abf9c86b.png",
-      "assets/blog-56245f1c.png"
-    ],
-    "file": "assets/BlogView-b3a3d7d4.js",
+    "file": "assets/BlogView-e7b8cff9.js",
     "imports": [
       "src/main.js"
     ],
@@ -112,7 +100,7 @@
     "src": "src/views/BlogView.vue"
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-4b6b189d.js",
+    "file": "assets/ContactUsView-82cd8305.js",
     "imports": [
       "src/main.js"
     ],
@@ -120,7 +108,7 @@
     "src": "src/views/ContactUsView.vue"
   },
   "src/views/GiftVouchersView.vue": {
-    "file": "assets/GiftVouchersView-7e609446.js",
+    "file": "assets/GiftVouchersView-a6256a2b.js",
     "imports": [
       "src/main.js"
     ],
@@ -135,7 +123,7 @@
       "assets/hill-3ddb4907.png",
       "assets/firepit-d3f0e6a5.png"
     ],
-    "file": "assets/PicnicHampersView-67cc5586.js",
+    "file": "assets/PicnicHampersView-eca33e02.js",
     "imports": [
       "src/main.js"
     ],
@@ -143,7 +131,7 @@
     "src": "src/views/PicnicHampersView.vue"
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-fa2a699a.js",
+    "file": "assets/WorkshopView-bd329939.js",
     "imports": [
       "src/main.js"
     ],

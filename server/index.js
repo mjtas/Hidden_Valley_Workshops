@@ -6,6 +6,7 @@ import cors from "cors";
 import path from "path";
 import Workshop from "./workshopModel.js";
 import Price from "./priceModel.js";
+import Blog from "./blogModel.js";
 import Subscriber from "./subscriberModel.js";
 import assetsRouter from "./assetsRouter.js";
 import homeRouter from "./homeRouter.js";
@@ -59,6 +60,16 @@ app.get('/getPriceData', async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).send('Error fetching price data');
+  }
+});
+
+app.get('/getBlogData', async (req, res) => {
+  try {
+    const blogData = await Blog.find({});
+    res.send(blogData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error fetching blog posts');
   }
 });
 
