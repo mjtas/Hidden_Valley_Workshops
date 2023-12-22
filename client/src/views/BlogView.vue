@@ -6,7 +6,7 @@
         <h2>Blog</h2>
       </div>
       <div class="about-other">
-        <div class="block" v-for="post in sortedPosts" :key="post.title">
+        <div class="block" v-for="post in sortedBlogPosts" :key="post.title">
         <BlogPost :post="post" /></div>
       </div>
     </div>
@@ -24,25 +24,26 @@ export default {
   data() {
     return {
       blogPosts: [], // Store fetched data here
-      sortedPosts: [] // Initialise sorted posts array
     };
+  },
+  computed: {
+    // Create a computed property for sorted blog posts
+    sortedBlogPosts() {
+      return this.blogPosts.slice().sort((a, b) => {
+        // Sort in descending order based on the 'date' property
+        return new Date(b.date) - new Date(a.date);
+      });
+    }
   },
   created() {
     // Make HTTP GET request to backend API
     axios.get('https://hidden-valley-workshops.onrender.com/getBlogData')
     .then(response => {
         this.blogPosts = response.data; // Update type property with fetched data
-        this.sortPosts(); // Sort the workshops
       })
     .catch(error => {
         console.error('Error fetching blog posts:', error);
       });
-  },
-  methods: {
-    sortPosts() {
-      // Sort workshops by date in ascending order
-      this.sortedPosts = [...this.blogPosts].sort((a, b) => new Date(a.date) - new Date(b.date));
-    }
   }
 }
 </script>

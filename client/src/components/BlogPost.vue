@@ -1,9 +1,9 @@
 <template>
     <div class="table-left">
         <ul class="main-text">
-            <h3 class="h3-link" @click="toggleText(post.title)">{{ post.title }}</h3>
+            <h3 class="h3-link" @click="toggleText()">{{ post.title }}</h3>
             <li class="main-li" v-if="post.show">
-            <span :class="{'highlight': isHighlighted(post.text)}">{{ post.text }}</span>
+                <span :class="{'highlight': isHighlighted(post.text)}" v-html="renderHtml(post.text)"></span>
             </li>
         </ul>
     </div>
@@ -13,8 +13,8 @@
             <button @click="clearSearch" class="clear-button" v-show="searchQuery">X</button>
         </div>
         <SubscriptionForm v-if="latest" />
-        <div class="main-opaque">
-            <img class="about-img" v-if="post.show" :src="`/${ post.image }.png`"/>
+        <div class="main-opaque" v-if="post.show">
+            <img class="about-img" :src="`/${ post.image }.png`"/>
         </div>
     </div>
 </template>
@@ -51,12 +51,9 @@ export default {
     },
   },
   methods: {
-    toggleText(title) {
-        // Find the workshop with the given name in workshops array
-        const post = this.blogPosts.find(post => post.title === title);
-        if (post) {
-            // Toggle the 'show' property of the found workshop
-            post.show = !post.show;
+    toggleText() {
+        // Toggle the 'show' property of the found workshop
+        post.show = !post.show;
         }
     },
     // Check if a text contains highlighted search terms
@@ -82,7 +79,10 @@ export default {
     // Function to clear the search bar
     clearSearch() {
       this.searchQuery = "";
-    }
+    },
+    // Function to render HTML content
+    renderHtml(htmlString) {
+      return htmlString;
+    },
   }
-}
 </script>
