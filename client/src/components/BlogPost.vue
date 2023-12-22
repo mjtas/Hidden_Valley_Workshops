@@ -8,11 +8,11 @@
       </ul>
     </div>
     <div class="main-right">
-      <div class="booking-container" v-if="latest">
+      <div class="booking-container" v-if="post.latest">
         <input v-model="searchQuery" class="search-input" placeholder="Search for keywords">
         <button @click="clearSearch" class="clear-button" v-show="searchQuery">X</button>
       </div>
-      <SubscriptionForm v-if="latest" />
+      <SubscriptionForm v-if="post.latest" />
       <div class="main-opaque" v-if="post.show">
         <img class="about-img" :src="`/${ post.image }.png`"/>
       </div>
