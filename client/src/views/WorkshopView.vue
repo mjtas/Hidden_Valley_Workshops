@@ -16,7 +16,7 @@
                     <ul class="main-text">
                         <h3 class="h3-link" @click="toggleText(workshop.name)">{{ workshop.name }}</h3>
                         <li class="main-li" v-if="workshop.show">{{ workshop.text }}</li>
-                        <li class="price-li">{{ price.length > 0 ? calcPrice(workshop.premium) : 'Loading...' }} (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.premium) : 'Loading...' }})</li>
+                        <li class="price-li">{{ price.length > 0 ? calcPrice(workshop.type) : 'Loading...' }} (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.type) : 'Loading...' }})</li>
                         <div class="booking-container">
                         <div class="booking">
                             <div class="booking-left">
@@ -86,10 +86,8 @@ export default {
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             return new Date(date).toLocaleDateString('en-UK', options);
         },
-        calcPrice(premium) {
-            const workshopType = premium
-            ? this.price.find(price => price.type === "premium")
-            : this.price.find(price => price.type === "standard");
+        calcPrice(type) {
+            const workshopType = this.price.find(price => price.type === type);
             // Check if workshopType is defined before accessing properties
             if (workshopType && workshopType.singlePrice !== undefined) {
                 return workshopType.singlePrice;
@@ -98,10 +96,8 @@ export default {
                 return "N/A";
             }
         },
-        calcDoublePrice(premium) {
-            const workshopType = premium
-            ? this.price.find(price => price.type === "premium")
-            : this.price.find(price => price.type === "standard");
+        calcDoublePrice(type) {
+            const workshopType = this.price.find(price => price.type === type);
             // Check if workshopType is defined before accessing properties
             if (workshopType && workshopType.doublePrice !== undefined) {
                 return workshopType.doublePrice;

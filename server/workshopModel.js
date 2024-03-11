@@ -10,6 +10,7 @@ const workshopSchema = new mongoose.Schema({
     show: Boolean,
     premium: Boolean,
     link: String,
+    type: String,
   }, { collection: 'workshops' });
   
 const Workshop = mongoose.model('Workshop', workshopSchema);
