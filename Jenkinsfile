@@ -6,10 +6,6 @@ pipeline {
         }
     }
 
-    parameters {
-        choice(name: 'BUILD_TARGET', choices: ['client', 'server', 'both'], description: 'Select the part of the project to build')
-    }
-
     environment {
         CI = 'true'
     }
@@ -20,25 +16,19 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Install Client Dependencies') {
-            steps {
-                dir('client') {
-                    sh 'npm install'
-                }
-            }
-        }
-        stage('Install Server Dependencies') {
-            steps {
-                dir('server') {
-                    sh 'npm install'
-                }
-            }
-        }
 
         stage('Build') {
             steps {
                 // Build the code using npm
-                sh 'npm run build'
+                dir('client') {
+                    npm install
+                }
+                dir('server') {
+                    npm install
+                }
+                dir('server') {
+                    npm run build
+                }
             }
         }
         stage('Unit and Integration Tests') {
