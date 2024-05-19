@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "npm install --include=dev && npm install dotenv && npm install vite@5.2.11 && npx vite build",
+    "build": "npm install --include=dev && npx vite build",
     "preview": "vite preview",
     "test": "cross-env NODE_ENV=test jest --testTimeout=5000",
     "start": "node server.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "postmark": "^4.0.2",
     "vue": "^3.3.4",
