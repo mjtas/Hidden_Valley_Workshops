@@ -6,6 +6,10 @@ pipeline {
         }
     }
 
+    parameters {
+        choice(name: 'BUILD_TARGET', choices: ['client', 'server', 'both'], description: 'Select the part of the project to build')
+    }
+
     environment {
         CI = 'true'
     }
