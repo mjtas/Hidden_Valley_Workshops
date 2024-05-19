@@ -22,10 +22,10 @@ pipeline {
                 // Build the code using npm
                 
                 dir('client') {
-                    sh 'npm install'
+                    sh 'npm install --include=dev'
                 }
                 dir('server') {
-                    sh 'npm install'
+                    sh 'npm install --include=dev'
                 }
                 dir('server') {
                     sh 'npm run build'
