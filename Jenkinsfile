@@ -20,8 +20,10 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the code using npm
+                
                 dir('client') {
                     sh 'npm install'
+                    sh 'npm install -g vite'
                 }
                 dir('server') {
                     sh 'npm install'
