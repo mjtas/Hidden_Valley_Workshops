@@ -17,5 +17,8 @@ export default defineConfig({
     // overwrite default .html entry
     input: './src/main.js',
     },
-  }
+  },
+  server: {
+        host: true,
+    }
 })
