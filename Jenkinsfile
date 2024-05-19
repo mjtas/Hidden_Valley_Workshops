@@ -21,13 +21,13 @@ pipeline {
             steps {
                 // Build the code using npm
                 dir('client') {
-                    npm install
+                    sh 'npm install'
                 }
                 dir('server') {
-                    npm install
+                    sh 'npm install'
                 }
                 dir('server') {
-                    npm run build
+                    sh 'npm run build'
                 }
             }
         }
