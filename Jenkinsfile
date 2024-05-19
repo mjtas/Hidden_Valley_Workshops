@@ -20,6 +20,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the code using npm
+                echo 'Build code using npm'
                 
                 dir('client') {
                     sh 'npm install --include=dev'
@@ -29,6 +30,15 @@ pipeline {
                 }
                 dir('server') {
                     sh 'npm run build'
+                }
+                script {
+                    docker.build('HiddenValleyBuild:latest', './Dockerfile')
+                }
+                post {
+                    success {
+                        // Archive the Docker image as a build artifact
+                        archiveArtifacts artifacts: 'HiddenValleyBuild.tar.gz', fingerprint: true
+                    }
                 }
             }
         }
