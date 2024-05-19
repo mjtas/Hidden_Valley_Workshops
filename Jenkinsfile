@@ -23,7 +23,6 @@ pipeline {
                 
                 dir('client') {
                     sh 'npm install'
-                    sh 'npm install vite'
                 }
                 dir('server') {
                     sh 'npm install'
