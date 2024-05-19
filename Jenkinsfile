@@ -11,10 +11,29 @@ pipeline {
     }
 
     stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Install Client Dependencies') {
+            steps {
+                dir('client') {
+                    sh 'npm install'
+                }
+            }
+        }
+        stage('Install Server Dependencies') {
+            steps {
+                dir('server') {
+                    sh 'npm install'
+                }
+            }
+        }
+
         stage('Build') {
             steps {
                 // Build the code using npm
-                sh 'npm install'
                 sh 'npm run build'
             }
         }
