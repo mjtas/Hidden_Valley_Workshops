@@ -31,14 +31,37 @@ pipeline {
                 dir('server') {
                     sh 'npm run build'
                 }
+                // Create OctopusPack as build artifact 
+                sh(script: 'which gitversion && gitversion /output buildserver || true')
+                // Capture the git version as an environment variable, or use a default version if gitversion wasn't available.
                 script {
-                    docker.build('HiddenValleyBuild:latest', './Dockerfile')
-                }
-                post {
-                    success {
-                        // Archive the Docker image as a build artifact
-                        archiveArtifacts artifacts: 'HiddenValleyBuild.tar.gz', fingerprint: true
+                    if (fileExists('gitversion.properties')) {
+                        def props = readProperties file: 'gitversion.properties'
+                        env.VERSION_SEMVER = props.GitVersion_SemVer
+                        env.VERSION_BRANCHNAME = props.GitVersion_BranchName
+                        env.VERSION_ASSEMBLYSEMVER = props.GitVersion_AssemblySemVer
+                        env.VERSION_MAJORMINORPATCH = props.GitVersion_MajorMinorPatch
+                        env.VERSION_SHA = props.GitVersion_Sha
+                    } else {
+                        env.VERSION_SEMVER = "1.0.0." + env.BUILD_NUMBER
                     }
+                }
+                script {
+                    def sourcePath = "."
+                    def outputPath = "."
+            
+                    octopusPack(
+            	        additionalArgs: '',
+            	        sourcePath: sourcePath,
+            	        outputPath : outputPath,
+            	        includePaths: "**/*.html\n**/*.htm\n**/*.css\n**/*.js\n**/*.min\n**/*.map\n**/*.sql\n**/*.png\n**/*.jpg\n**/*.jpeg\n**/*.gif\n**/*.json\n**/*.env\n**/*.txt\n**/Procfile",
+            	        overwriteExisting: true, 
+            	        packageFormat: 'zip', 
+            	        packageId: 'Hidden_Valley_Workshops', 
+            	        packageVersion: env.VERSION_SEMVER, 
+            	        toolId: 'Default', 
+            	        verboseLogging: false)
+                    env.ARTIFACTS = "Hidden_Valley_Workshops.${env.VERSION_SEMVER}.zip"
                 }
             }
         }
@@ -55,52 +78,60 @@ pipeline {
                 echo 'sonar-scanner'
             }
         }
-        stage('Security Scan') {
-            steps {
-                echo 'Perform security scan using OWASP ZAP'
-                echo 'zap-cli --start --spider <target_url>'
-                echo 'zap-cli --active-scan <target_url>'
-            }
-            post{
-                always{
-                    emailext (
-                        subject: 'Security Scan Status',
-                        to: 'mjbickel@duck.com',
-                        body: "${currentBuild.result}: Job ",
-                        attachLog: true,
-                    )
-                }
-            }
-        }
-        stage('Deploy to Staging') {
-            steps {
-                echo 'Deploy application to AWS EC2 instance'
-                echo 'aws deploy <staging_instance>'
-            }
-        }
-        stage('Integration Tests on Staging') {
-            steps {
-                // Install dependencies if necessary
-                echo 'npm install'
         
-                echo 'Run integration tests using Supertest on staging environment'
-                echo 'npm run test:integration:staging'
-            }
-            post{
-                always{
-                    emailext (
-                        subject: 'Integration Tests on Staging Status',
-                        to: 'mjbickel@duck.com',
-                        body: "${currentBuild.result}: Job ",
-                        attachLog: true,
-                    )
-                }
-            }
-        }
-        stage('Deploy to Production') {
+        stage('Deploy') {
             steps {
-                // Deploy application to AWS EC2 instance
-                echo 'aws deploy <production_instance>'
+                // Perform the deployment with Octopus Deploy.
+                octopusPushPackage(additionalArgs: '',
+                packagePaths: env.ARTIFACTS.split(":").join("\n"),
+                overwriteMode: 'OverwriteExisting',
+                serverId: params.ServerId,
+                spaceId: params.SpaceId,
+                toolId: 'Default')
+                octopusPushBuildInformation(additionalArgs: '',
+                commentParser: 'GitHub',
+                overwriteMode: 'OverwriteExisting',
+                packageId: env.ARTIFACTS.split(":")[0].substring(env.ARTIFACTS.split(":")[0].lastIndexOf("/") + 1, env.ARTIFACTS.split(":")[0].length()).replaceAll("\\." + env.VERSION_SEMVER + "\\..+", ""),
+                packageVersion: env.VERSION_SEMVER,
+                serverId: params.ServerId,
+                spaceId: params.SpaceId,
+                toolId: 'Default',
+                verboseLogging: false,
+                gitUrl: env.GIT_URL,
+                gitCommit: env.GIT_COMMIT,
+                gitBranch: env.GIT_BRANCH)
+                octopusCreateRelease(additionalArgs: '',
+                cancelOnTimeout: false,
+                channel: '',
+                defaultPackageVersion: '',
+                deployThisRelease: false,
+                deploymentTimeout: '',
+                environment: params.EnvironmentName,
+                jenkinsUrlLinkback: false,
+                project: params.ProjectName,
+                releaseNotes: false,
+                releaseNotesFile: '',
+                releaseVersion: env.VERSION_SEMVER,
+                serverId: params.ServerId,
+                spaceId: params.SpaceId,
+                tenant: '',
+                tenantTag: '',
+                toolId: 'Default',
+                verboseLogging: false,
+                waitForDeployment: false)
+                octopusDeployRelease(cancelOnTimeout: false,
+                deploymentTimeout: '',
+                environment: params.EnvironmentName,
+                project: params.ProjectName,
+                releaseVersion: env.VERSION_SEMVER,
+                serverId: params.ServerId,
+                spaceId: params.SpaceId,
+                tenant: '',
+                tenantTag: '',
+                toolId: 'Default',
+                variables: '',
+                verboseLogging: false,
+                waitForDeployment: true)
             }
         }
     }
