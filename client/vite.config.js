@@ -18,7 +18,5 @@ export default defineConfig({
     input: './src/main.js',
     },
   },
-  server: {
-        host: true,
-    }
+
 })
