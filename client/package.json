@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.10",
     "postmark": "^4.0.2",
     "vite-plugin-ejs": "^1.7.0",
     "vue": "^3.3.4",
