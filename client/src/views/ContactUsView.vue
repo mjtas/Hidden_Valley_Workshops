@@ -37,7 +37,9 @@
           </div>
         </div>
       </div>
+      <ChildComponent />
       <RefundComponent />
+
   </div>
 </div>
 </div>
@@ -45,9 +47,11 @@
 
 <script>
 import axios from 'axios';
+import ChildComponent from '../components/ChildComponent.vue';
 import RefundComponent from  '../components/RefundComponent.vue';
 export default {
   components: {
+    ChildComponent,
     RefundComponent,
   },
   data() {
