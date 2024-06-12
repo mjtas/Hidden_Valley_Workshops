@@ -13,7 +13,7 @@
           <div class="table-left">
           <WorkshopTimetable :workshops="sortedWorkshops" @workshopSelected="handleWorkshopSelected" />
           <div class="home-booking-container">
-            <div class="home-booking"><h3>Can't get to a scheduled workshop? Arrange one at a date and time that suits you</h3>
+            <div class="home-booking"><h3>Can't get to a scheduled workshop? Arrange one at a date and time that suits you for $399</h3>
             <router-link to="/contactUs" tag="button" class="button button3">Contact</router-link></div>
           </div>
         </div>
