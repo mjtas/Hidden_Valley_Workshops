@@ -3,21 +3,9 @@
     "file": "assets/about-CkVrL4_T.png",
     "src": "src/assets/about.png"
   },
-  "src/assets/basket.png": {
-    "file": "assets/basket-fEW9VBsL.png",
-    "src": "src/assets/basket.png"
-  },
-  "src/assets/creek.png": {
-    "file": "assets/creek-C_Fnadke.png",
-    "src": "src/assets/creek.png"
-  },
   "src/assets/creekPaddock.png": {
     "file": "assets/creekPaddock-7mgwyuM4.png",
     "src": "src/assets/creekPaddock.png"
-  },
-  "src/assets/firepit.png": {
-    "file": "assets/firepit-C0YFETnT.png",
-    "src": "src/assets/firepit.png"
   },
   "src/assets/fonts/freeserif-webfont.woff": {
     "file": "assets/freeserif-webfont-CyYu-59P.woff",
@@ -43,16 +31,8 @@
     "file": "assets/hiddenValley-mVpZ0Ln8.png",
     "src": "src/assets/hiddenValley.png"
   },
-  "src/assets/hill.png": {
-    "file": "assets/hill-BpN-jAeX.png",
-    "src": "src/assets/hill.png"
-  },
-  "src/assets/views.png": {
-    "file": "assets/views-COIgHClS.png",
-    "src": "src/assets/views.png"
-  },
   "src/main.js": {
-    "file": "assets/main-Bom0d8nR.js",
+    "file": "assets/main-Cx6CYAw3.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
@@ -60,7 +40,8 @@
       "src/views/AboutView.vue",
       "src/views/WorkshopView.vue",
       "src/views/GiftVouchersView.vue",
-      "src/views/PicnicHampersView.vue",
+      "src/views/ConsultingView.vue",
+      "src/views/HowToView.vue",
       "src/views/BlogView.vue",
       "src/views/ContactUsView.vue"
     ],
@@ -77,7 +58,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-BfCcj9e_.js",
+    "file": "assets/AboutView-DtsYz5F1.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -90,7 +71,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-D1WemGQq.js",
+    "file": "assets/BlogView-r7u7ChNG.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -98,8 +79,17 @@
       "src/main.js"
     ]
   },
+  "src/views/ConsultingView.vue": {
+    "file": "assets/ConsultingView-aotyMt03.js",
+    "name": "ConsultingView",
+    "src": "src/views/ConsultingView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-TQCLQoE9.js",
+    "file": "assets/ContactUsView-Yq0bI5Lj.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -108,7 +98,7 @@
     ]
   },
   "src/views/GiftVouchersView.vue": {
-    "file": "assets/GiftVouchersView-C0b29lYo.js",
+    "file": "assets/GiftVouchersView-D2ZbWD4Z.js",
     "name": "GiftVouchersView",
     "src": "src/views/GiftVouchersView.vue",
     "isDynamicEntry": true,
@@ -116,24 +106,17 @@
       "src/main.js"
     ]
   },
-  "src/views/PicnicHampersView.vue": {
-    "file": "assets/PicnicHampersView-BnfSXw5U.js",
-    "name": "PicnicHampersView",
-    "src": "src/views/PicnicHampersView.vue",
+  "src/views/HowToView.vue": {
+    "file": "assets/HowToView-C7YFUoZ8.js",
+    "name": "HowToView",
+    "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
     "imports": [
       "src/main.js"
-    ],
-    "assets": [
-      "assets/basket-fEW9VBsL.png",
-      "assets/creek-C_Fnadke.png",
-      "assets/views-COIgHClS.png",
-      "assets/hill-BpN-jAeX.png",
-      "assets/firepit-C0YFETnT.png"
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-CnQYv2w5.js",
+    "file": "assets/WorkshopView-r0aKFq7f.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,

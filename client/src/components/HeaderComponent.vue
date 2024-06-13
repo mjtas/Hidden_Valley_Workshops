@@ -11,7 +11,8 @@
         </ul>
         <!-- Right side links -->
         <ul class="header-ul header-ul-right" :class="{ displayHeaderLinks: displayHeaderLinks }">
-          <router-link to="/picnicHampers">Picnic Hampers</router-link> 
+          <router-link to="/consulting">Consulting</router-link>
+          <router-link to="/howToGuides">How To Guides</router-link> 
           <router-link to="/blog">Blog</router-link> 
           <router-link to="/contactUs">Contact</router-link>
         </ul>
