@@ -6,7 +6,7 @@
         :guides="guides" 
         :guideType="type.value" 
         :guideTypeName="type.name" 
-        @guideSelected="handleGuideSelected(guideName)" 
+        @guideSelected="handleGuideSelected" 
       />
     </div>
   </template>
@@ -37,9 +37,9 @@
       }
     },
     methods: {
-      handleGuideSelected(guideName) {
+      handleGuideSelected(guideTitle) {
         // Emit the event to the parent component
-        this.$emit('guideSelected', guideName);
+        this.$emit('guideSelected', guideTitle);
       }
     }
   }

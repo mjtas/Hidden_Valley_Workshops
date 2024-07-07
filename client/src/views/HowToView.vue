@@ -7,7 +7,7 @@
           </div>
           <div class="main-other">
           <div class="guide-left">
-            <HowToList :guides="guides" @guideSelected="handleGuideSelected(selectedGuideTitle)" />
+            <HowToList :guides="guides" @guideSelected="handleGuideSelected" />
           </div>
           <div class="guide-right">
             <ul class="main-text">
