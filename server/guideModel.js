@@ -7,8 +7,9 @@ const guideSchema = new mongoose.Schema({
     type: String,
     image: String,
     introText: String,
-    toolString: String,
     materialString: String,
+    toolString: String,
+    cuttingList: String,
     numberedSteps: String,
     concText: String,
     

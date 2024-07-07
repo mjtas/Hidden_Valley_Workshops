@@ -18,7 +18,7 @@
     },
     methods: {
       splitItems(inputString) {
-        return inputString ? inputString.split(',').map(item => item.trim()) : [];
+        return inputString ? inputString.split(',,').map(item => item.trim()) : [];
       }
     }
   };
