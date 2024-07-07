@@ -9,7 +9,7 @@
     <ul>
       <li>{{ guide.introText }}</li>
     </ul>
-    <ToolsEquip :guide="guide"/>
+    <ToolsMaterials :guide="guide"/>
     <table v-if="isBuilding">
       <CuttingList :guide="guide"/>
     </table>
@@ -29,7 +29,7 @@ import NumberedSteps from '../components/NumberedSteps.vue';
 export default {
   components: {
     AssumedKnowledge,
-    ToolsEquip,
+    ToolsMaterials,
     CuttingList,
     NumberedSteps,
   },
