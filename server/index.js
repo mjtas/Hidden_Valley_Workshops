@@ -77,10 +77,10 @@ app.get('/getBlogData', async (req, res) => {
 app.get('/getGuides', async (req, res) => {
   try {
     const guides = await Guide.find({});
-    res.send(blogData);
+    res.send(guides);
   } catch (error) {
     console.error(error);
-    res.status(500).send('Error fetching blog posts');
+    res.status(500).send('Error fetching guides');
   }
 });
 
