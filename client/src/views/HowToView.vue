@@ -6,10 +6,10 @@
           <h2>How To Guides</h2>
           </div>
           <div class="main-other">
-          <div class="main-left">
+          <div class="guide-left">
             <HowToList :guides="guides" @guideSelected="handleGuideSelected" />
           </div>
-          <div class="main-right">
+          <div class="guide-right">
             <ul class="main-text">
               <li class="main-li" v-if="selectedGuideName==''">{{ howToIntro1 }}</li>
               <li class="main-li" v-if="selectedGuideName==''">{{ howToIntro2 }}</li>
@@ -52,9 +52,9 @@
         });
     },
   methods: {
-    handleGuideSelected(guideName) {
-      this.selectedGuideName = guideName;
-      this.selectedGuide = this.guides.find(guide => guide.name === guideName);
+    handleGuideSelected(guideTitle) {
+      this.selectedGuideTitle = guideTitle;
+      this.selectedGuide = this.guides.find(guide => guide.title === guideTitle);
     }
   }
   }

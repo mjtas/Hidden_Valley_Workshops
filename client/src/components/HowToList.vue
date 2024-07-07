@@ -6,7 +6,7 @@
         :guides="guides" 
         :guideType="type.value" 
         :guideTypeName="type.name" 
-        @guideSelected="handleGuideSelected" 
+        @guideSelected="handleGuideSelected(guideName)" 
       />
     </div>
   </template>

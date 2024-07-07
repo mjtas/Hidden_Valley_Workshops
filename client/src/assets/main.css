@@ -96,6 +96,22 @@
   gap: 24px;
 }
 
+.guide-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Centre content vertically */
+  gap: 24px;
+}
+
+.guide-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Centre content vertically */
+  gap: 24px;
+}
+
 /* Styling for the workshop table container*/
 .table-left {
   width: 80%;
