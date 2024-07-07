@@ -9,7 +9,7 @@
           <div class="block">
             <div class="picnic-container">
               <ul class="picnic-text">
-                <h3>Coming soon...</h3>
+                <li class="main-li">Coming soon...</li>
                 </ul>
                 </div>
                 </div>
