@@ -19,9 +19,9 @@
         </div>
         <div class="main-right">
           <ul class="main-text">
-            <li class="main-li">Find inspiration and information to start gardening, bread baking, making compost and building. Extend your knowledge and improve your practical skills.</li>
-            <li class="main-li">Our workshops will inspire you to get out there and start that new hobby or project you want to do, and they are a fun and informative way to spend your Sunday morning.</li>
-            <li class="main-li">All workshops include a hearty, fresh baked morning tea.  Book a unique experience in a beautiful part of Tasmania.</li>
+            <li class="main-li">Are you looking for inspiration and information to get you started gardening, baking artisan bread, making compost or building?</li>
+            <li class="main-li">You might want to extend your knowledge and improve your practical skills.</li>
+            <li class="main-li">Or you might be travelling in Tasmania and looking for an interesting activity to do while you are here.</li>
             <li class="main-li">Hidden Valley is only 20 minutes from Deloraine, an hour from Devonport or Launceston, and 2 hours from Hobart on the Great Lakes touring route.</li>
           </ul>
           <SubscriptionForm />

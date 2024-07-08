@@ -14,7 +14,7 @@
       <CuttingList :guide="guide"/>
     </table>
     <NumberedSteps :guide="guide"/>
-    <ul class="main-text">
+    <ul class="main-text" v-if="guide.concText!=''">
       <li class="main-li">{{ guide.concText }}</li>
     </ul>
   </div>

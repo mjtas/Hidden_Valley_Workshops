@@ -2,12 +2,12 @@
     <div>
       <table>
         <thead>
-          <tr>
-            <th colspan="2">Cutting List</th>
+          <tr class="tool-th">
+            <th class="tool-th" colspan="2">Cutting List</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(pair, index) in pairedCuttingItems" :key="index">
+          <tr class="tool-th" v-for="(pair, index) in pairedCuttingItems" :key="index">
             <td>{{ pair[0] }}</td>
             <td>{{ pair[1] }}</td>
           </tr>
