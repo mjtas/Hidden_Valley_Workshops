@@ -4,7 +4,6 @@
         <thead>
           <tr>
             <th>Cutting List</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>

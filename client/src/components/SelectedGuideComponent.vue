@@ -3,10 +3,10 @@
     <h3>{{ guide.title }}</h3>
     <h4>Difficulty Level: {{ guide.rating }}</h4>
     <img class="about-img" :src="`/${ guide.image }.png`"/>
-    <ul v-if="isBuilding">
+    <ul class="main-text" v-if="isBuilding">
       <AssumedKnowledge />
     </ul>
-    <ul>
+    <ul class="main-text">
       <li class="main-li">{{ guide.introText }}</li>
     </ul>
     <ToolsMaterials :guide="guide"/>
@@ -14,7 +14,7 @@
       <CuttingList :guide="guide"/>
     </table>
     <NumberedSteps :guide="guide"/>
-    <ul>
+    <ul class="main-text">
       <li class="main-li">{{ guide.concText }}</li>
     </ul>
   </div>
