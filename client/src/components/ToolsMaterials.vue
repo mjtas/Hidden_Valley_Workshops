@@ -1,16 +1,16 @@
 <template>
     <div>
-      <table>
+      <table class="premium-table">
         <thead>
-          <tr>
-            <th>Materials</th>
-            <th>Tools</th>
+          <tr class="tool-th">
+            <th class="tool-th">Materials</th>
+            <th class="tool-th">Tools</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="index in maxItemsLength" :key="index">
-            <td>{{ materialItems[index] || '' }}</td>
-            <td>{{ toolItems[index] || '' }}</td>
+          <tr class="tool-th" v-for="index in maxItemsLength" :key="index">
+            <td>{{ materialItems[index - 1] || '' }}</td>
+            <td>{{ toolItems[index - 1] || '' }}</td>
           </tr>
         </tbody>
       </table>

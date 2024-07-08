@@ -242,7 +242,6 @@
   align-items: center;
 }
 
-/* Styling for main list items */
 .main-li {
   margin: 0;
   margin-bottom: 12px;
@@ -323,7 +322,6 @@ h4 {
   align-items: center; /* Centre content horizontally */
 }
 
-/* Styling for buttons */
 .button {
   color: #F9FAF8;
   background: #0E6251;
@@ -561,6 +559,11 @@ input
 .premium-table {
   width: 100%;
   }
+
+.tool-th,
+.tool-th {
+  width: 50%;
+}
 
 .a-contact {
     text-decoration: none;
