@@ -32,7 +32,7 @@
     "src": "src/assets/hiddenValley.png"
   },
   "src/main.js": {
-    "file": "assets/main-C286mu22.js",
+    "file": "assets/main-DPijf6Jd.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
@@ -58,7 +58,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView--ml6-Obk.js",
+    "file": "assets/AboutView-DZDlL12O.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -71,7 +71,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-DsVkZaQB.js",
+    "file": "assets/BlogView-DrwI2q8Z.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -80,7 +80,7 @@
     ]
   },
   "src/views/ConsultingView.vue": {
-    "file": "assets/ConsultingView-Dvm6csHh.js",
+    "file": "assets/ConsultingView-B-ycDr4x.js",
     "name": "ConsultingView",
     "src": "src/views/ConsultingView.vue",
     "isDynamicEntry": true,
@@ -89,7 +89,7 @@
     ]
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-CGTLVRlV.js",
+    "file": "assets/ContactUsView-BcZPjPTc.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -98,7 +98,7 @@
     ]
   },
   "src/views/GiftVouchersView.vue": {
-    "file": "assets/GiftVouchersView-DD_O9ZLS.js",
+    "file": "assets/GiftVouchersView-CRpLEQ-N.js",
     "name": "GiftVouchersView",
     "src": "src/views/GiftVouchersView.vue",
     "isDynamicEntry": true,
@@ -107,7 +107,7 @@
     ]
   },
   "src/views/HowToView.vue": {
-    "file": "assets/HowToView-CPsWU-_y.js",
+    "file": "assets/HowToView-B04-cxrL.js",
     "name": "HowToView",
     "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
@@ -116,7 +116,7 @@
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-CEqCnME-.js",
+    "file": "assets/WorkshopView-hljL3g7M.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,
