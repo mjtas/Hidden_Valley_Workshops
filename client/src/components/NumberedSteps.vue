@@ -1,7 +1,7 @@
 <template>
     <div>
       <ol class="guide-steps">
-        <li v-for="(item, index) in splitItems(guide.numberedSteps)" :key="index">
+        <li class="guide-text" v-for="(item, index) in splitItems(guide.numberedSteps)" :key="index">
           {{ item }}
         </li>
       </ol>
