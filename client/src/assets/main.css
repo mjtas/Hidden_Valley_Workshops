@@ -265,6 +265,13 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: right;
+  font-style: italic;
+}
+
 .h3-link {
   color: black;
   transition: background-color 0.3s;
