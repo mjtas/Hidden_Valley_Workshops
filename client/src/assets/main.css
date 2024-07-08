@@ -142,6 +142,7 @@
   background-color: white; /* Background color for text content */
   background-color: rgba(255,255,255,0.5); /* Background color with transparency */
   color: black;
+  list-style-position: inside; /* Ensures numbers are inside the box */
 }
 
 .picnic-text {
@@ -317,14 +318,12 @@ button:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
 }
 
-/* Styling for button with class button1 */
 .button1 {
   border: none;
   width: 100px;
   cursor: pointer;
 }
 
-/* Styling for button with class button4 */
 .button4 {
   border: none;
   width: 200px;
@@ -332,7 +331,6 @@ button:hover {
   padding: 24px;
 }
 
-  /* Styling for booking section */
   .booking-container {
     display: flex;
     justify-content: center;
@@ -416,7 +414,6 @@ button:hover {
   text-align: center;
 }
 
-/* Style for the search input */
 .search {
   display: flex;
   justify-content: center;
