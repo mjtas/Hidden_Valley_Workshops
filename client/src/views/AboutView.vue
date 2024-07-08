@@ -9,7 +9,7 @@
           <div class="block">
             <div class="main-left">
               <ul class="main-text">
-                <li class="main-li">Hi, I’m Bonnie Bickel and I run sustainable living workshops on my large stunning property 20 minutes outside of Deloraine in central Northern Tasmania. I decided to focus my life around producing my own food and doing things for myself about 15 years ago, and in that time I have learnt a lot! </li>
+                <li class="main-li">Hi, I’m Bonnie Bickel and I run sustainable living workshops on my large stunning property 20 minutes outside of Deloraine in central northern Tasmania. I decided to focus my life around producing my own food and doing things for myself about 15 years ago, and in that time I have learnt a lot! </li>
                 <li class="main-li">A healthy diet is one consisting mainly of fruit and vegetables, and I have learnt to focus on growing all the fruit and vegetables my family needs in the most efficient way possible. I also do all kinds of building projects around the home which improves the quality of our lives, such as building a play-set and mud kitchen for the kids. I also bake artisan sourdough bread, which is much cheaper and healthier than buying bread and gives us so much joy.</li>
                 <li class="main-li">When I’m not doing things around the place, I’m in front of the fire researching my topics of interest and planning for the future. I am so passionate about this way of life I’ve found and excited to be part of helping others live happy, joyful and meaningful lives around the home.</li>
               </ul>  
