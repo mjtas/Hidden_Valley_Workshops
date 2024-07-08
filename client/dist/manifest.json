@@ -32,7 +32,7 @@
     "src": "src/assets/hiddenValley.png"
   },
   "src/main.js": {
-    "file": "assets/main-qkglYqhm.js",
+    "file": "assets/main-BDsfJGft.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
@@ -46,7 +46,7 @@
       "src/views/ContactUsView.vue"
     ],
     "css": [
-      "assets/main-D3AiRdi3.css"
+      "assets/main-B7996RDD.css"
     ],
     "assets": [
       "assets/header_toggle-CjfdX-kD.png",
@@ -58,7 +58,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-CAdAxKAe.js",
+    "file": "assets/AboutView-DR591Enf.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -71,7 +71,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-DbunDP-E.js",
+    "file": "assets/BlogView-9PaHymjr.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -80,7 +80,7 @@
     ]
   },
   "src/views/ConsultingView.vue": {
-    "file": "assets/ConsultingView-DUhjQXDY.js",
+    "file": "assets/ConsultingView-O95Av-9A.js",
     "name": "ConsultingView",
     "src": "src/views/ConsultingView.vue",
     "isDynamicEntry": true,
@@ -89,7 +89,7 @@
     ]
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-C3swyplu.js",
+    "file": "assets/ContactUsView-DO3OPW2d.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -98,7 +98,7 @@
     ]
   },
   "src/views/GiftVouchersView.vue": {
-    "file": "assets/GiftVouchersView-dQvljJ8y.js",
+    "file": "assets/GiftVouchersView-DBbNqCKJ.js",
     "name": "GiftVouchersView",
     "src": "src/views/GiftVouchersView.vue",
     "isDynamicEntry": true,
@@ -107,7 +107,7 @@
     ]
   },
   "src/views/HowToView.vue": {
-    "file": "assets/HowToView-C6TcH9Kn.js",
+    "file": "assets/HowToView-DE4G-w2G.js",
     "name": "HowToView",
     "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
@@ -116,7 +116,7 @@
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-B9w_L1yX.js",
+    "file": "assets/WorkshopView-B2_O0MO4.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,

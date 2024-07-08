@@ -1,6 +1,6 @@
 <template>
     <div>
-      <ol>
+      <ol class="guide-steps">
         <li v-for="(item, index) in splitItems(guide.numberedSteps)" :key="index">
           {{ item }}
         </li>
