@@ -14,7 +14,7 @@
               <li class="main-li" v-if="selectedGuideTitle==''">{{ howToIntro1 }}</li>
               <li class="main-li" v-if="selectedGuideTitle==''">{{ howToIntro2 }}</li>
 
-              <SelectedGuideComponent guide="selectedGuide" v-if="selectedGuideTitle!=''" />
+              <SelectedGuideComponent :guide="selectedGuide" v-if="selectedGuideTitle!=''" />
             </ul>
           </div>
         </div>
