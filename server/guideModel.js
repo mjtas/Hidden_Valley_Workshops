@@ -9,7 +9,7 @@ const guideSchema = new mongoose.Schema({
     introText: String,
     materialString: String,
     toolString: String,
-    cuttingList: String,
+    cuttingString: String,
     numberedSteps: String,
     concText: String,
     
