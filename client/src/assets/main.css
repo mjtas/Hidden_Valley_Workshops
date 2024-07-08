@@ -290,7 +290,19 @@ h4 {
   cursor: pointer;
 }
 
+.h3-link2 {
+  font-size: 18px;
+  color: black;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  text-align: left;
+}
+
 .h3-link:hover {
+  background-color: #f0f0f0;
+}
+
+.h3-link2:hover {
   background-color: #f0f0f0;
 }
 
