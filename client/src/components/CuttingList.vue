@@ -3,7 +3,7 @@
       <table>
         <thead>
           <tr>
-            <th>Cutting List</th>
+            <th colspan="2">Cutting List</th>
           </tr>
         </thead>
         <tbody>
