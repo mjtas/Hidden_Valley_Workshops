@@ -33,10 +33,12 @@
             </div>
           </div>
         </div>
+        <div class="block">
         <div class="home-booking-container">
             <div class="home-booking"><h3>Discuss your needs and book a 1.5 hour initial site visit for $99</h3>
             <router-link to="/contactUs" tag="button" class="button button3">Contact</router-link></div>
           </div>
+        </div>
       </div>
     </div>
   </div>

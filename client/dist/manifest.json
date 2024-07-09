@@ -40,7 +40,7 @@
     "src": "src/assets/skillsConsult.png"
   },
   "src/main.js": {
-    "file": "assets/main-Co4ZXwdS.js",
+    "file": "assets/main-S_5IYqZ4.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
@@ -66,7 +66,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-CKKJVL7W.js",
+    "file": "assets/AboutView-Cez3ulhN.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -79,7 +79,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-DyNdGjpJ.js",
+    "file": "assets/BlogView-DLdGlCs9.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -88,7 +88,7 @@
     ]
   },
   "src/views/ConsultingView.vue": {
-    "file": "assets/ConsultingView-Ci9UUqNd.js",
+    "file": "assets/ConsultingView-D51_-Pv5.js",
     "name": "ConsultingView",
     "src": "src/views/ConsultingView.vue",
     "isDynamicEntry": true,
@@ -101,7 +101,7 @@
     ]
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-DvAh4F_L.js",
+    "file": "assets/ContactUsView-Fsq4Pfr2.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -110,7 +110,7 @@
     ]
   },
   "src/views/GiftVouchersView.vue": {
-    "file": "assets/GiftVouchersView-CuWLzziK.js",
+    "file": "assets/GiftVouchersView-VqabJJcq.js",
     "name": "GiftVouchersView",
     "src": "src/views/GiftVouchersView.vue",
     "isDynamicEntry": true,
@@ -119,7 +119,7 @@
     ]
   },
   "src/views/HowToView.vue": {
-    "file": "assets/HowToView-BxI2EXEB.js",
+    "file": "assets/HowToView-BXKoTpXE.js",
     "name": "HowToView",
     "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
@@ -128,7 +128,7 @@
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-NeVhzPX6.js",
+    "file": "assets/WorkshopView-CVkJkMpk.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,
