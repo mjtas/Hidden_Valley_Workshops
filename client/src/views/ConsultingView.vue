@@ -25,7 +25,7 @@
             <div class="main-left">
               <ul class="main-text">
                 <h3>Practical Skills Consulting</h3>
-                <li class="main-li">You might want some help sorting out your sourdough. You might want some building advice on how to build a garden fence, greenhouse, chook house or any other DIY project you have planned. I’m here to help get you organised and get you started, whether that means telling you what tools you need, showing you the skills you need to get the job done, or working with you until you are confident enough to do it alone. </li>
+                <li class="main-li">You might want some help pruning your fruit trees. You might want some building advice on how to build a garden fence, greenhouse, chook house or any other DIY project you have planned. I’m here to help get you organised and get you started, whether that means telling you what tools you need, showing you the skills you need to get the job done, or working with you until you are confident enough to do it alone.</li>
               </ul>
               </div>
           <div class="main-right">
