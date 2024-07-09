@@ -11,7 +11,7 @@
               <ul class="main-text">
                 <h3>Garden Design</h3>
                 <li class="main-li">I have designed many edible gardens including one using permaculture principles, another one with high raised beds, and here the Hidden Garden is modelled on a traditional french potager and the Courtyard Garden is a pure Charles Dowding No Dig design. I also love flowers and have included many perennials, annuals, climbers and of course roses in my gardens. </li>
-                <li class="main-li">Having set-up my own 3/4 acre block in Hobart for self-sufficient food production (including dairy, meat, eggs, fruit and vegetables) I can help you design your own plan for becoming more self-sufficient. I have learnt many lessons the hard way and look forward to saving others the money and heartache involved by helping you plan efficient and sensible systems to suit your block and lifestyle.</li>
+                <li class="main-li">Having set up my own 3/4 acre block in Hobart for self-sufficient food production (including dairy, meat, eggs, fruit and vegetables) I can help you design your own plan for becoming more self-sufficient. I have learnt many lessons the hard way and look forward to saving others the money and heartache involved by helping you plan efficient and sensible systems to suit your block and lifestyle.</li>
                 <li class="main-li">I believe our gardens can be expressions of who we are, they can be works of art, or they can be all about efficient food production. I’ll design the garden you want and one that will suit your needs.</li>
               </ul>
             </div>
@@ -34,9 +34,9 @@
             </div>
           </div>
         </div>
-        <div class="block">
+        <div class="other-heading">
         <div class="home-booking-container">
-            <div class="home-booking"><h3>Discuss your needs and book a 1.5 hour initial site visit for $99</h3>
+            <div class="home-booking"><h3>Discuss your needs and arrange an initial site visit ($99 for 90 minutes)</h3>
             <router-link to="/contactUs" tag="button" class="button button3">Contact</router-link></div>
           </div>
         </div>
