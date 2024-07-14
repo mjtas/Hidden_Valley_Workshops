@@ -10,7 +10,7 @@
       <li class="main-li">{{ guide.introText }}</li>
     </ul>
     <ToolsMaterials :guide="guide"/>
-    <table v-if="isBuilding">
+    <table v-if="isBuilding && guide.cuttingString!=''">
       <CuttingList :guide="guide"/>
     </table>
     <NumberedSteps :guide="guide"/>
