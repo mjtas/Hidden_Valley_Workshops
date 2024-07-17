@@ -2,7 +2,8 @@
   <div>
     <h3>{{ guide.title }}</h3>
     <h4>Difficulty Level: {{ guide.rating }}</h4>
-    <img class="about-img" :src="`/${ guide.image }.png`"/>
+    <div class="main-opaque">
+    <img class="about-img" :src="`/${ guide.image }.png`"/></div>
     <ul class="main-text" v-if="isBuilding">
       <AssumedKnowledge />
     </ul>
