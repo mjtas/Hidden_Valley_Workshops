@@ -30,8 +30,8 @@
           { value: 'greenhouse', name: 'Greenhouse and Polytunnel Growing' },
           { value: 'berries', name: 'Growing Berries' },
           { value: 'noDig', name: 'No Dig Gardening' },
-          { value: 'preserving', name: 'Preserving Fruit and Vegetables' },
-          //{ value: 'pruning', name: 'Pruning and Espalier Fruit Trees' },
+          //{ value: 'preserving', name: 'Preserving Fruit and Vegetables' },
+          { value: 'pruning', name: 'Pruning and Espalier Fruit Trees' },
           { value: 'sourdough', name: 'Sourdough' }
         ]
       }
