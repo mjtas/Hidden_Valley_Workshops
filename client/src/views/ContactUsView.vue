@@ -30,7 +30,7 @@
             <div class="map" id="map"></div>
             <ul class="main-text">
               <h3>Where is Hidden Valley?</h3>
-              <li>Workshops are held at 12361 Highland Lakes Rd, Golden Valley (gate open during workshops only).</li><br>
+              <li>Workshops are held at 12361 Highland Lakes Rd, Golden Valley (gate open for workshops from 8:45am).</li><br>
               <h3>What should I bring to my workshop?</h3>
               <li>Please arrive for your workshop at 8:45am. We might only be 20 minutes drive from Deloraine but at an elevation of 750 metres above sea level we are usually 3 to 5 degrees colder. Bring an extra layer of warm clothes regardless of the time of year, and sun protection in summer as workshops will be held outdoors where possible.</li>
             </ul>
