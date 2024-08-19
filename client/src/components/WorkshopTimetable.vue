@@ -27,12 +27,19 @@ export default {
         workshops: Array, // Define the workshops prop to receive the sorted workshops data
     },
     computed: {
-      // Filter workshops to exclude those before today's date
+    // Filter workshops to include only those within the next 6 months from today's date
       filteredWorkshops() {
         const today = new Date().setHours(0, 0, 0, 0); // Get today's date without time
-        return this.workshops.filter(workshop => new Date(workshop.date) >= today);
+        const sixMonthsFromToday = new Date(); 
+        sixMonthsFromToday.setMonth(sixMonthsFromToday.getMonth() + 6); // Add 6 months to today
+
+        return this.workshops.filter(workshop => {
+          const workshopDate = new Date(workshop.date).setHours(0, 0, 0, 0); // Get workshop date without time
+          return workshopDate >= today && workshopDate <= sixMonthsFromToday;
+        });
       }
     },
+
     methods: {
       selectWorkshop(workshopName) {
         // Emit an event or update a data property with workshopName

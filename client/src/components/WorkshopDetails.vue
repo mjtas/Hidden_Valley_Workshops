@@ -114,10 +114,20 @@ export default {
     
     computed: {
         otherWorkshops() {
-            return this.workshops.filter((workshop) => {
-                return this.isOther || workshop.name !== this.selectedWorkshop.name;
-            });
-        }
-    }
+        const today = new Date().setHours(0, 0, 0, 0); // Get today's date without time
+        const sixMonthsFromToday = new Date();
+        sixMonthsFromToday.setMonth(sixMonthsFromToday.getMonth() + 6); // Add 6 months to today
+
+        return this.workshops.filter((workshop) => {
+            const workshopDate = new Date(workshop.date).setHours(0, 0, 0, 0); // Get workshop date without time
+      
+        return (
+            workshop.name !== this.selectedWorkshop.name && // Exclude selectedWorkshop
+            workshopDate >= today && // Only include dates from today
+            workshopDate <= sixMonthsFromToday // Only include dates within 6 months
+        );
+    });
+  }
+}
   }
 </script>
