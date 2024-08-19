@@ -11,7 +11,7 @@
         </div>
         <div class="about-other">
                 
-            <div class="block" v-for="workshop in sortedWorkshops" :key="workshop.name">
+            <div class="block" v-for="workshop in filteredWorkshops" :key="workshop.name">
                 <div class="main-left">
                     <ul class="main-text">
                         <h3 class="h3-link" @click="toggleText(workshop.name)">{{ workshop.name }}</h3>
@@ -67,6 +67,20 @@ export default {
         .catch(error => {
             console.error('Error fetching price data:', error);
         });
+    },
+
+    computed: {
+    // Filter workshops to include only those within the next 6 months from today's date
+      filteredWorkshops() {
+        const today = new Date().setHours(0, 0, 0, 0); // Get today's date without time
+        const sixMonthsFromToday = new Date(); 
+        sixMonthsFromToday.setMonth(sixMonthsFromToday.getMonth() + 6); // Add 6 months to today
+
+        return this.workshops.filter(workshop => {
+          const workshopDate = new Date(workshop.date).setHours(0, 0, 0, 0); // Get workshop date without time
+          return workshopDate >= today && workshopDate <= sixMonthsFromToday;
+        });
+      }
     },
         
     methods: {
