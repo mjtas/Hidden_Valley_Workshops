@@ -7,6 +7,7 @@
           <router-link to="/">Home</router-link> 
           <router-link to="/about">About</router-link>
           <router-link to="/workshops">Workshops</router-link>
+          <router-link to="/buildingWeekends">Building Weekends</router-link>
           <router-link to="/giftVouchers">Gift Vouchers</router-link> 
         </ul>
         <!-- Right side links -->

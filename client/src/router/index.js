@@ -18,50 +18,36 @@ const routes = [
   {
     path: '/workshops',
     name: 'workshops',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "workshops" */ '../views/WorkshopView.vue')
   },
-
+  {
+    path: '/buildingWeekends',
+    name: 'buildingWeekends',
+    component: () => import(/* webpackChunkName: "buildingWeekends" */ '../views/BuildingWeekendsView.vue')
+  },
   {
     path: '/giftVouchers',
     name: 'giftVouchers',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "giftVouchers" */ '../views/GiftVouchersView.vue')
   },
   {
     path: '/consulting',
     name: 'consulting',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "consulting" */ '../views/ConsultingView.vue')
   },
   {
     path: '/howToGuides',
     name: 'howToGuides',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "howToGuides" */ '../views/HowToView.vue')
   },
   {
     path: '/blog',
     name: 'blog',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "blog" */ '../views/BlogView.vue')
   },
   {
     path: '/contactUs',
     name: 'contactUs',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "contactUs" */ '../views/ContactUsView.vue')
   }
 ]

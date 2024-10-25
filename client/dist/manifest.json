@@ -1,4 +1,12 @@
 {
+  "_skillsConsult-BXPVgVgq.js": {
+    "file": "assets/skillsConsult-BXPVgVgq.js",
+    "name": "skillsConsult",
+    "assets": [
+      "assets/gardenDesign-CUk-JGfW.png",
+      "assets/skillsConsult-Yc3j_Dju.png"
+    ]
+  },
   "src/assets/about.png": {
     "file": "assets/about-CkVrL4_T.png",
     "src": "src/assets/about.png"
@@ -40,13 +48,14 @@
     "src": "src/assets/skillsConsult.png"
   },
   "src/main.js": {
-    "file": "assets/main-CtifdLHK.js",
+    "file": "assets/main-D7xJ5w-p.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
     "dynamicImports": [
       "src/views/AboutView.vue",
       "src/views/WorkshopView.vue",
+      "src/views/BuildingWeekendsView.vue",
       "src/views/GiftVouchersView.vue",
       "src/views/ConsultingView.vue",
       "src/views/HowToView.vue",
@@ -66,7 +75,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-moSyQ3k3.js",
+    "file": "assets/AboutView-DJIqmSlp.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -79,7 +88,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-DTVtVgjS.js",
+    "file": "assets/BlogView-BlD7_sd0.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -87,21 +96,28 @@
       "src/main.js"
     ]
   },
+  "src/views/BuildingWeekendsView.vue": {
+    "file": "assets/BuildingWeekendsView-B10CVEyw.js",
+    "name": "BuildingWeekendsView",
+    "src": "src/views/BuildingWeekendsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_skillsConsult-BXPVgVgq.js",
+      "src/main.js"
+    ]
+  },
   "src/views/ConsultingView.vue": {
-    "file": "assets/ConsultingView-CcbKxM_Q.js",
+    "file": "assets/ConsultingView-B-a2MNpt.js",
     "name": "ConsultingView",
     "src": "src/views/ConsultingView.vue",
     "isDynamicEntry": true,
     "imports": [
+      "_skillsConsult-BXPVgVgq.js",
       "src/main.js"
-    ],
-    "assets": [
-      "assets/gardenDesign-CUk-JGfW.png",
-      "assets/skillsConsult-Yc3j_Dju.png"
     ]
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-Bp0UCE1r.js",
+    "file": "assets/ContactUsView-Dknb6pSl.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -110,7 +126,7 @@
     ]
   },
   "src/views/GiftVouchersView.vue": {
-    "file": "assets/GiftVouchersView-7MO6Koqs.js",
+    "file": "assets/GiftVouchersView-DS-BsXh5.js",
     "name": "GiftVouchersView",
     "src": "src/views/GiftVouchersView.vue",
     "isDynamicEntry": true,
@@ -119,7 +135,7 @@
     ]
   },
   "src/views/HowToView.vue": {
-    "file": "assets/HowToView-Bqvi3jst.js",
+    "file": "assets/HowToView-Nx7jt0Vn.js",
     "name": "HowToView",
     "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
@@ -128,7 +144,7 @@
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-CEnLp3M3.js",
+    "file": "assets/WorkshopView-D-8xMklb.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,
