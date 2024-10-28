@@ -52,7 +52,7 @@
     "src": "src/assets/skillsConsult.png"
   },
   "src/main.js": {
-    "file": "assets/main-BDaCKt1N.js",
+    "file": "assets/main-DieLlLDL.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
@@ -78,7 +78,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-B2oQk53c.js",
+    "file": "assets/AboutView-CNpvrL5I.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -91,7 +91,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-IgTpFL97.js",
+    "file": "assets/BlogView-UKlZ00UC.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -100,7 +100,7 @@
     ]
   },
   "src/views/BuildingWeekendsView.vue": {
-    "file": "assets/BuildingWeekendsView-CkGkosWQ.js",
+    "file": "assets/BuildingWeekendsView-CL1xo4DZ.js",
     "name": "BuildingWeekendsView",
     "src": "src/views/BuildingWeekendsView.vue",
     "isDynamicEntry": true,
@@ -114,7 +114,7 @@
     ]
   },
   "src/views/ConsultingView.vue": {
-    "file": "assets/ConsultingView-pYLMxo0e.js",
+    "file": "assets/ConsultingView-D9AnELjn.js",
     "name": "ConsultingView",
     "src": "src/views/ConsultingView.vue",
     "isDynamicEntry": true,
@@ -127,7 +127,7 @@
     ]
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-CZ0ptKz1.js",
+    "file": "assets/ContactUsView-BIlyABhA.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -139,7 +139,7 @@
     ]
   },
   "src/views/HowToView.vue": {
-    "file": "assets/HowToView-DmCdLd7S.js",
+    "file": "assets/HowToView-D0n4CLno.js",
     "name": "HowToView",
     "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
@@ -148,7 +148,7 @@
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-BqXsyVAL.js",
+    "file": "assets/WorkshopView-DBn6lD2H.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,
