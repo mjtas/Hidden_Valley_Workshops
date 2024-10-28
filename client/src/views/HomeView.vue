@@ -9,13 +9,18 @@
             <router-link to="/contactUs" tag="button" class="button button3">Contact</router-link></div>
         </div>
         <div class="home-booking-container" v-else>
-            <div class="home-booking"><h3>Looking for a garden design to bring your ideas to reality?  Discuss your needs and arrange an initial site visit ($99 for 90 minutes)</h3>
+            <div class="home-booking"><h3>Looking for a garden design to bring your ideas to reality?  Discuss your needs and arrange an initial site visit</h3>
             <router-link to="/contactUs" tag="button" class="button button3">Contact</router-link></div>
           </div>
         </div>
         <div class="main-other" v-if="selectedWorkshopName==''">
           <div class="table-left">
           <WorkshopTimetable :workshops="sortedWorkshops" @workshopSelected="handleWorkshopSelected" />
+          <ul class="main-left">
+            <li class="review-li">"Thanks Bonnie for the wonderful short course on using building tools. Good fun in a beautiful location with a lovely group of participants. Excellent practical teaching to build our confidence!"</li>
+            <li class="review-li">"This course was amazing. A great mentor, an unspeakably beautiful setting and fabulous hospitality. I would go to another course in a heartbeat."</li>
+            <li class="main-li">For more reviews, see https://g.page/r/CYkb5HGi0MIXEAE/review</li>
+          </ul>
           <div class="home-booking-container">
             <div class="home-booking"><h3>Can't get to a scheduled workshop? Arrange one at a date and time that suits you for $399</h3>
             <router-link to="/contactUs" tag="button" class="button button3">Contact</router-link></div>
