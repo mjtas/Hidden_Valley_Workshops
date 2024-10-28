@@ -248,6 +248,15 @@
   padding: 0;
 }
 
+.disc-li {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+
+
 /* Styling for price items */
 .price-li {
   margin: 0;
