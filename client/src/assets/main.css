@@ -1,5 +1,6 @@
 /* Importing base styles from another CSS file */
 @import './base.css';
+@import 'leaflet/dist/leaflet.css';
 
 /* Styling for the root application container */
 #app {

@@ -47,6 +47,9 @@
 <script>
 import axios from 'axios';
 import RefundComponent from  '../components/RefundComponent.vue';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+
 export default {
   components: {
     RefundComponent,
@@ -59,9 +62,19 @@ export default {
     };
   },
   mounted() {
-    // Load Google Maps API script
-    this.loadGoogleMapsScript();
+    const position = [-41.69140599172209, 146.72657868289832];
+    const map = L.map('map').setView(position, 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker(position).addTo(map)
+      .bindPopup('<b>Hidden Valley</b><br>Workshops location.')
+      .openPopup();
   },
+
   methods: {
     submitForm() {
       // Validate form fields (you may add more validation as needed)
@@ -89,35 +102,6 @@ export default {
       this.email = '';
       this.message = '';
     },
-
-    loadGoogleMapsScript() {
-      // Check if the Google Maps script is already loaded
-      
-      if (typeof google === 'undefined') {
-        const script = document.createElement('script');
-        script.src = import.meta.env.VITE_MAP;
-        script.defer = true;
-        script.async = true;
-        script.onload = this.initMap;
-        document.head.appendChild(script);
-      } else {
-        // Google Maps script is already loaded, initialise the map
-        this.initMap();
-      }
-    },
-    initMap() {
-      const position = { lat: -41.69140599172209, lng: 146.72657868289832 };
-      const map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 7,
-        center: position,
-        mapId: 'DEMO_MAP_ID',
-      });
-      const marker = new google.maps.Marker({
-        position: position,
-        map: map,
-        title: 'HiddenValley',
-      });
-    }
   }
 }
 </script>
