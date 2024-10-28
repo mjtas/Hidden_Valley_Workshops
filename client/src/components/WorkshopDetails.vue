@@ -4,7 +4,9 @@
         <ul class="main-text">
             <h3 class="h3-link" @click="toggleText(selectedWorkshop.name)">{{ selectedWorkshop.name }}</h3>
             <li class="main-li" v-if="selectedWorkshop.show">{{ selectedWorkshop.text }}</li>
-            <li class="price-li">{{ price.length > 0 ? calcPrice(selectedWorkshop.type) : 'Loading...' }} (or bring a friend for {{ price.length > 0 ? calcDoublePrice(selectedWorkshop.type) : 'Loading...' }})</li>
+            <span v-if="workshop.doublePrice.length > 0">
+            (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.type) : 'Loading...' }})
+            </span>
             <div class="booking-container">
                 <div class="booking">
                   <div class="booking-left">
@@ -26,7 +28,10 @@
         <ul class="main-text">
             <h3 class="h3-link" @click="toggleText(workshop.name)">{{ workshop.name }}</h3>
             <li class="main-li" v-if="workshop.show">{{ workshop.text }}</li>
-            <li class="price-li">{{ price.length > 0 ? calcPrice(workshop.type) : 'Loading...' }} (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.type) : 'Loading...' }})</li>
+            <li class="price-li">{{ price.length > 0 ? calcPrice(workshop.type) : 'Loading...' }}
+                <span v-if="workshop.doublePrice.length > 0">
+                (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.type) : 'Loading...' }})
+                </span></li>
             <div class="booking-container">
                 <div class="booking">
                   <div class="booking-left">
