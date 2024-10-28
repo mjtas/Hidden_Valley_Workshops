@@ -22,12 +22,12 @@
             </div>
             <div class="block">
               <div class="main-left">
-                <ul class="main-text">
-                  <li class="main-li">You will get:</li>
-                  <li>Hands-On Learning: build your knowledge of and confidence with hand and power tools</li>
-                  <li>Practical Skills: get confident with the techniques needed to confidently tackle DIY projects on your own</li>
-                  <li>Supportive Environment</li>
-                  <li>Personal Empowerment: you won’t be just learning building skills, you’ll also be building your confidence, overall practical skills, and self-reliance.</li>
+                <ul>
+                  You will get:
+                  <li class="main-li">Hands-On Learning: build your knowledge of and confidence with hand and power tools</li>
+                  <li class="main-li">Practical Skills: get confident with the techniques needed to confidently tackle DIY projects on your own</li>
+                  <li class="main-li">Supportive Environment</li>
+                  <li class="main-li">Personal Empowerment: you won’t be just learning building skills, you’ll also be building your confidence, overall practical skills, and self-reliance.</li>
                 </ul>
                 </div>
             <div class="main-right">
