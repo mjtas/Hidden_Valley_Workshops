@@ -71,7 +71,7 @@ export default {
     }).addTo(map);
 
     L.marker(position).addTo(map)
-      .bindPopup('<b>Hidden Valley</b><br>Workshops location.')
+      .bindPopup('<b>Hidden Valley</b>')
       .openPopup();
   },
 

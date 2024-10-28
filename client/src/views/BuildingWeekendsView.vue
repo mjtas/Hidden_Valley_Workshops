@@ -9,14 +9,14 @@
             <div class="block">
               <div class="main-left">
                 <ul class="main-text">
-                  <li class="main-li">Do you want more opportunities to practice your building skills?. Are you a complete beginner and want to learn the basics of building in a supportive all-female environment?</li>
+                  <li class="main-li">Do you want more opportunities to practice your building skills? Are you a complete beginner and want to learn the basics of building in a supportive all-female environment?</li>
                   <li class="main-li">Hidden Valley is a one hour drive from Launceston or Devonport.  If you don't live in the area, then what better reason to have a weekend away than to learn building skills and gain confidence with tools at Hidden Valley. We’re only 10 minutes from the Golden Valley caravan park and 20 minutes from Deloraine where there are many options for dinner and self-contained rooms. </li>
                   <li class="main-li">These weekends are designed specifically for beginners. I know it’s daunting to pick up tools if you’ve never done it before. But in a supportive, all-women environment and with my expert guidance, you’ll discover just how much you’re capable of.</li>
                 </ul>
               </div>
               <div class="main-right">
                 <div class="main-opaque">
-                <img class="about-img" src="../assets/gardenDesign.png" alt="Hidden Valley">
+                <img class="about-img" src="../assets/groupBuilding.png" alt="Hidden Valley">
                 </div>
               </div>
             </div>
@@ -24,15 +24,15 @@
               <div class="main-left">
                 <ul class="main-text">
                   <li class="main-li">You will get:</li>
-                  <li class="main-li">Hands-On Learning: build your knowledge of and confidence with hand and power tools</li>
-                  <li class="main-li">Practical Skills: get confident with the techniques needed to confidently tackle DIY projects on your own</li>
-                  <li class="main-li">Supportive Environment</li>
-                  <li class="main-li">Personal Empowerment: you won’t be just learning building skills, you’ll also be building your confidence, overall practical skills, and self-reliance.</li>
+                  <li>Hands-On Learning: build your knowledge of and confidence with hand and power tools</li>
+                  <li>Practical Skills: get confident with the techniques needed to confidently tackle DIY projects on your own</li>
+                  <li>Supportive Environment</li>
+                  <li>Personal Empowerment: you won’t be just learning building skills, you’ll also be building your confidence, overall practical skills, and self-reliance.</li>
                 </ul>
                 </div>
             <div class="main-right">
               <div class="main-opaque">
-                <img class="about-img" src="../assets/skillsConsult.png" alt="Hidden Valley">
+                <img class="about-img" src="../assets/sanding.png" alt="Hidden Valley">
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
                 </div>
             <div class="main-right">
               <div class="main-opaque">
-                <img class="about-img" src="../assets/skillsConsult.png" alt="Hidden Valley">
+                <img class="about-img" src="../assets/buildingExp.png" alt="Hidden Valley">
               </div>
             </div>
           </div>
