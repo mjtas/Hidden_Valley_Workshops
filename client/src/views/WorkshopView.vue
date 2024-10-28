@@ -76,7 +76,7 @@
             const sixMonthsFromToday = new Date(); 
             sixMonthsFromToday.setMonth(sixMonthsFromToday.getMonth() + 6); // Add 6 months to today
     
-            return this.workshops.filter(workshop => {
+            return this.sortedWorkshops.filter(workshop => {
               const workshopDate = new Date(workshop.date).setHours(0, 0, 0, 0); // Get workshop date without time
               return workshopDate >= today && workshopDate <= sixMonthsFromToday;
             });
