@@ -4,9 +4,9 @@
         <ul class="main-text">
             <h3 class="h3-link" @click="toggleText(selectedWorkshop.name)">{{ selectedWorkshop.name }}</h3>
             <li class="main-li" v-if="selectedWorkshop.show">{{ selectedWorkshop.text }}</li>
-            <li class="price-li">{{ price.length > 0 ? calcPrice(workshop.type) : 'Loading...' }}
+            <li class="price-li">{{ price.length > 0 ? calcPrice(selectedWorkshop.type) : 'Loading...' }}
             <span v-if="selectedWorkshop.type != 'weekend'">
-            (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.type) : 'Loading...' }})
+            (or bring a friend for {{ price.length > 0 ? calcDoublePrice(selectedWorkshop.type) : 'Loading...' }})
             </span></li>
             <div class="booking-container">
                 <div class="booking">
