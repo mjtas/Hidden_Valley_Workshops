@@ -56,7 +56,7 @@
     "src": "src/assets/veraBuilding.png"
   },
   "src/main.js": {
-    "file": "assets/main-DaeouslZ.js",
+    "file": "assets/main-CRIf20H9.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
@@ -82,7 +82,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-DMtKn603.js",
+    "file": "assets/AboutView-AnSq-xwd.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -95,7 +95,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-Cib6L8ps.js",
+    "file": "assets/BlogView-CyWUogwL.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -104,7 +104,7 @@
     ]
   },
   "src/views/BuildingWeekendsView.vue": {
-    "file": "assets/BuildingWeekendsView-D6rK69WA.js",
+    "file": "assets/BuildingWeekendsView-DxeqEDNX.js",
     "name": "BuildingWeekendsView",
     "src": "src/views/BuildingWeekendsView.vue",
     "isDynamicEntry": true,
@@ -119,7 +119,7 @@
     ]
   },
   "src/views/ConsultingView.vue": {
-    "file": "assets/ConsultingView-HykzsBdO.js",
+    "file": "assets/ConsultingView-Dxtqhome.js",
     "name": "ConsultingView",
     "src": "src/views/ConsultingView.vue",
     "isDynamicEntry": true,
@@ -132,7 +132,7 @@
     ]
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-mosd8CJu.js",
+    "file": "assets/ContactUsView-DfM3Q9EX.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -144,7 +144,7 @@
     ]
   },
   "src/views/HowToView.vue": {
-    "file": "assets/HowToView-SgfpRVva.js",
+    "file": "assets/HowToView-DyOLbrkF.js",
     "name": "HowToView",
     "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
@@ -153,7 +153,7 @@
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-CLc5jyrT.js",
+    "file": "assets/WorkshopView-Db0nCplS.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,
