@@ -56,7 +56,7 @@
     "src": "src/assets/veraBuilding.png"
   },
   "src/main.js": {
-    "file": "assets/main-CP6aa2Mp.js",
+    "file": "assets/main-DaeouslZ.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
@@ -70,7 +70,7 @@
       "src/views/ContactUsView.vue"
     ],
     "css": [
-      "assets/main-P7-dbPt0.css"
+      "assets/main-p4EXxMOF.css"
     ],
     "assets": [
       "assets/header_toggle-CjfdX-kD.png",
@@ -82,7 +82,7 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-DSvdceD3.js",
+    "file": "assets/AboutView-DMtKn603.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
@@ -95,7 +95,7 @@
     ]
   },
   "src/views/BlogView.vue": {
-    "file": "assets/BlogView-CmI-kk03.js",
+    "file": "assets/BlogView-Cib6L8ps.js",
     "name": "BlogView",
     "src": "src/views/BlogView.vue",
     "isDynamicEntry": true,
@@ -104,7 +104,7 @@
     ]
   },
   "src/views/BuildingWeekendsView.vue": {
-    "file": "assets/BuildingWeekendsView-CwSxmpjq.js",
+    "file": "assets/BuildingWeekendsView-D6rK69WA.js",
     "name": "BuildingWeekendsView",
     "src": "src/views/BuildingWeekendsView.vue",
     "isDynamicEntry": true,
@@ -119,7 +119,7 @@
     ]
   },
   "src/views/ConsultingView.vue": {
-    "file": "assets/ConsultingView-CZ40oLCj.js",
+    "file": "assets/ConsultingView-HykzsBdO.js",
     "name": "ConsultingView",
     "src": "src/views/ConsultingView.vue",
     "isDynamicEntry": true,
@@ -132,7 +132,7 @@
     ]
   },
   "src/views/ContactUsView.vue": {
-    "file": "assets/ContactUsView-DlNmR5lz.js",
+    "file": "assets/ContactUsView-mosd8CJu.js",
     "name": "ContactUsView",
     "src": "src/views/ContactUsView.vue",
     "isDynamicEntry": true,
@@ -144,7 +144,7 @@
     ]
   },
   "src/views/HowToView.vue": {
-    "file": "assets/HowToView-DCLY3Qnb.js",
+    "file": "assets/HowToView-SgfpRVva.js",
     "name": "HowToView",
     "src": "src/views/HowToView.vue",
     "isDynamicEntry": true,
@@ -153,7 +153,7 @@
     ]
   },
   "src/views/WorkshopView.vue": {
-    "file": "assets/WorkshopView-ofu3Kae5.js",
+    "file": "assets/WorkshopView-CLc5jyrT.js",
     "name": "WorkshopView",
     "src": "src/views/WorkshopView.vue",
     "isDynamicEntry": true,
