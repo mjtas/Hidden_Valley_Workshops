@@ -22,7 +22,7 @@
             <li class="review-small-li">- Rebecca</li>
             <li class="review-li">"This course was amazing. A great mentor, an unspeakably beautiful setting and fabulous hospitality. I would go to another course in a heartbeat."</li>
             <li class="review-small-li">- Linda</li>
-            <a class="workshop-a" @click="window.location.href='https://www.google.com/maps/place/Hidden+Valley+Workshops/@-41.6754289,146.7329156,16z/data=!4m8!3m7!1s0xaa7a7f46ea2c43c9:0x17c2d0a271e41b89!8m2!3d-41.6777528!4d146.7364454!9m1!1b1!16s%2Fg%2F11vsg8njlw?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D'">Read more reviews</a>
+            <a class="review-a" window.location.href='https://www.google.com/maps/place/Hidden+Valley+Workshops/@-41.6754289,146.7329156,16z/data=!4m8!3m7!1s0xaa7a7f46ea2c43c9:0x17c2d0a271e41b89!8m2!3d-41.6777528!4d146.7364454!9m1!1b1!16s%2Fg%2F11vsg8njlw?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D'>Read more reviews</a>
           </ul>
           </div>
           <div class="home-booking-container">
