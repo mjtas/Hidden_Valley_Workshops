@@ -17,7 +17,7 @@
                             <h3 class="h3-link" @click="toggleText(workshop.name)">{{ workshop.name }}</h3>
                             <li class="main-li" v-if="workshop.show">{{ workshop.text }}</li>
                             <li class="price-li">{{ price.length > 0 ? calcPrice(workshop.type) : 'Loading...' }}
-                                <span v-if="!['weekend', 'mother'].includes(workshoporkshop.type)">
+                                <span v-if="!['weekend', 'mother'].includes(workshop.type)">
                                 (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.type) : 'Loading...' }})
                             </span></li>
                             <div class="booking-container">
