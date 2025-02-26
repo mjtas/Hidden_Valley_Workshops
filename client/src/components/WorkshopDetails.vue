@@ -4,6 +4,7 @@
         <ul class="main-text">
             <h3 class="h3-link" @click="toggleText(selectedWorkshop.name)">{{ selectedWorkshop.name }}</h3>
             <li class="main-li" v-if="selectedWorkshop.show">{{ selectedWorkshop.text }}</li>
+            <li class="price-li">{{ workshop.time }}</li>
             <li class="price-li">{{ price.length > 0 ? calcPrice(selectedWorkshop.type) : 'Loading...' }}
             <span v-if="!['weekend', 'mother'].includes(selectedWorkshop.type)">
             (or bring a friend for {{ price.length > 0 ? calcDoublePrice(selectedWorkshop.type) : 'Loading...' }})
@@ -29,6 +30,7 @@
         <ul class="main-text">
             <h3 class="h3-link" @click="toggleText(workshop.name)">{{ workshop.name }}</h3>
             <li class="main-li" v-if="workshop.show">{{ workshop.text }}</li>
+            <li class="price-li">{{ workshop.time }}</li>
             <li class="price-li">{{ price.length > 0 ? calcPrice(workshop.type) : 'Loading...' }}
                 <span v-if="!['weekend', 'mother'].includes(workshop.type)">
             (or bring a friend for {{ price.length > 0 ? calcDoublePrice(workshop.type) : 'Loading...' }})

@@ -11,6 +11,7 @@ const workshopSchema = new mongoose.Schema({
     premium: Boolean,
     link: String,
     type: String,
+    time: String,
   }, { collection: 'workshops' });
   
 const Workshop = mongoose.model('Workshop', workshopSchema);
